@@ -1,6 +1,6 @@
-# Nome do projeto
+# G3 - Mapeamento Academia
 
-Escreva um ou dois parágrafo resumindo o objetivo do seu projeto.
+Este site tem o objetivo de mapear as academias pelo Brasil. Indicando onde estão, valor, qualidade, variedade de equipamentos e diversos outros aspectos. Percebemos que esta ideia pode facilitar bastante a vida das pessoas que viajam e pretendem praticar musculação, além de ajudar a achar de fato o local exato da academia, também será feito um cadastro do usuário, que não terá que “perder tempo” fornecendo-os para novas academias, ademais não terá que efetuar pagamentos na hora, pois o dinheiro será depositado no site e ele mesmo faz a transação.
 
 ## Alunos integrantes da equipe
 
