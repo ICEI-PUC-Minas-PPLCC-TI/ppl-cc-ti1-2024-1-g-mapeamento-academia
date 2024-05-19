@@ -58,17 +58,19 @@ main {
     background-color: #e0e0e0;
 }
 
-photo-grid {
+.photo-grid {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    align-items: center;
+    gap: 20px;
     padding: 20px;
+    overflow-x: auto; /* Permite rolagem horizontal */
 }
 
 .foto {
+    flex: 0 0 auto; /* Evita que os itens encolham */
     position: relative;
-    width: 100%;
-    max-width: 200px;
+    width: 200px;
     height: 200px;
     background-color: #000;
     border-radius: 10px;
