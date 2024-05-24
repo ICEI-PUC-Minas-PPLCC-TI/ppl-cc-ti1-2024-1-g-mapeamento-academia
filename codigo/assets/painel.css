@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    background-color: #fff6bf;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #000;
+    padding-left: 40px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+    gap: 40px;
+}
+
+.photo {
+    width: 300px;
+    height: 300px;
+    background-color: #000;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.info span {
+    margin-top: 10px;
+    max-width: 70%;
+}
+
+#editar {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#editar:hover {
+    background-color: #e0e0e0;
+}
+
+.photo-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    overflow-x: auto; /* Permite rolagem horizontal */
+}
+
+.foto {
+    flex: 0 0 auto; /* Evita que os itens encolham */
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #000;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
