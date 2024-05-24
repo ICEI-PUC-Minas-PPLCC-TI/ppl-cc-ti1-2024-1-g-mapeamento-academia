@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pagamento.css">
+    <title>Pagamento</title>
+</head>
+<body>
+    <script src="pagamento.js"></script>
+
+    <section class="pag">
+
+        <div id="opcoes">
+            <button onclick="mostrarform('credito')">Crédito</button>
+            <button onclick="mostrarform('debito')">Débito</button>
+            <button onclick="mostrarform('pix')">Pix</button>
+        </div>
+
+        <div class="form">
+            <div id="dadoscartao" class="esconde">
+
+                <div class="form100">
+                    <input type="text" id="email" placeholder="Email" required>
+                </div>
+
+                <div class="form100">
+                    <input type="text" id="numerodocartao" placeholder="Número do Cartão" required>
+                    
+                    <div class="form50">
+                        <input type="text" id="validade" placeholder="Validade" required>
+                        <input type="text" id="CVC" placeholder="CVC" required>
+                    </div>
+                
+                </div>
+                <div class="form100">
+                    <input type="text" id="nomecartao" placeholder="Nome no Cartão" required>
+                </div>
+                <div class="form100">
+                    <input type="text" id="cpfCartao" placeholder="CPF" required>
+                </div>
+                <div class="form100">
+                    <button id="botaopag" onclick="processarpag()" disabled>Pagar</button>
+                </div>
+
+            </div>
+
+            <div id="dadospix" class="esconde">
+                <input type="text" id="cpfPix" placeholder="CPF" required>
+                <div class="form100">
+                    <button onclick="codigo()">Código de pagamento</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+    
+</body>
+</html>
