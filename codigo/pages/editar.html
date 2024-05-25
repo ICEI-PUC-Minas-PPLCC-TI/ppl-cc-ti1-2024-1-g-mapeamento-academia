@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Painel de Controle</title>
+    <link rel="stylesheet" href="../assets/editar.css">
+</head>
+<body>
+    <h1>Editar Painel de Controle</h1>
+    <form id="editForm">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" required>
+        
+        <label for="descricao">Descrição:</label>
+        <textarea id="descricao" name="descricao" required></textarea>
+        
+        <label for="mainPhoto">Foto Principal (URL):</label>
+        <input type="text" id="mainPhoto" name="mainPhoto" required>
+        
+        <label for="photos">Fotos (URLs separadas por vírgula):</label>
+        <textarea id="photos" name="photos" required></textarea>
+        
+        <button type="submit">Salvar</button>
+    </form>
+    
+    <script src="../assets/js/editar.js"></script>
+</body>
+</html>
