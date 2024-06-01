@@ -1,0 +1,24 @@
+.cadastro{
+    color: black;
+    font-weight: bolder;
+    align-content: center;
+}
+
+#tela_cadastro{
+    background-color: gray;
+}
+
+select {
+    border-radius: 0.25em;
+    padding: 0.2em 0.2em;
+    font-size: 1.25rem;
+    cursor: pointer;
+    line-height: 1.1;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.botoes{
+    width: 100% !important;
+  }
+
