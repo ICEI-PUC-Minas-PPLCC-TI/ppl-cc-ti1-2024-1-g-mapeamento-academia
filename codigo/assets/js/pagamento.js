@@ -1,37 +1,53 @@
 function mostrarform(tipo) {
-  var dadoscartao = document.getElementById('dadoscartao');
-  var dadospix = document.getElementById('dadospix');
-  dadoscartao.classList.add('esconde');
-  dadospix.classList.add('esconde');
-  
-  if (tipo === 'credito' || tipo === 'debito') {
-      dadoscartao.classList.remove('esconde');
-      verificarCampos();
-  } else if (tipo === 'pix') {
-      dadospix.classList.remove('esconde');
-  }
+    var dadoscartaoC = document.getElementById('dadoscartaoC');
+    var dadoscartaoD = document.getElementById('dadoscartaoD');
+    var dadospix = document.getElementById('dadospix');
+    
+    dadoscartaoC.classList.add('esconde');
+    dadoscartaoD.classList.add('esconde');
+    dadospix.classList.add('esconde');
+
+    document.getElementById('credito-btn').classList.remove('selected');
+    document.getElementById('debito-btn').classList.remove('selected');
+    document.getElementById('pix-btn').classList.remove('selected');
+
+    if (tipo === 'credito') {
+        dadoscartaoD.classList.remove('esconde');
+        dadoscartaoC.classList.add('mostrar');
+        document.getElementById('credito-btn').classList.add('selected');
+        
+        dadoscartaoD.classList.remove('mostrar');
+        dadoscartaoD.classList.add('esconde');
+        
+        dadospix.classList.remove('mostrar');
+        dadospix.classList.add('esconde');
+
+    } else if (tipo === 'debito') {
+        dadoscartaoC.classList.remove('esconde');
+        dadoscartaoD.classList.add('mostrar');
+        document.getElementById('debito-btn').classList.add('selected');
+        
+        dadoscartaoC.classList.remove('mostrar');
+        dadoscartaoC.classList.add('esconde');
+        
+        dadospix.classList.remove('mostrar');
+        dadospix.classList.add('esconde');
+
+    } else if (tipo === 'pix') {
+        dadospix.classList.remove('esconde');
+        dadospix.classList.add('mostrar');
+        document.getElementById('pix-btn').classList.add('selected');
+        
+        dadoscartaoC.classList.remove('mostrar');
+        dadoscartaoC.classList.add('esconde');
+
+        dadoscartaoD.classList.remove('mostrar');
+        dadoscartaoD.classList.add('esconde');
+        
+    }
 }
 
-function verificarCampos() {
-  var campos = document.querySelectorAll('#dadoscartao input');
-  var todosPreenchidos = Array.from(campos).every(input => input.value);
-  document.getElementById('botaopag').disabled = !todosPreenchidos;
+function processarpag(){
+    alert("Pagamento concluido!");
 }
-
-// Adicionando ouvintes de eventos para cada campo de entrada
-document.querySelectorAll('#dadoscartao input').forEach(input => {
-  input.addEventListener('input', verificarCampos);
-});
-
-function processarpag() {
-  // Aqui você adicionaria o código para processar o pagamento
-  alert('Pagamento processado!');
-}
-
-function codigo() {
-  // Aqui você adicionaria o código para gerar o código de teste e o QR Code
-  window.open('pagina-codigo.html', '_blank');
-}
-
-// Chame verificarCampos quando a página carregar para definir o estado inicial do botão
 window.onload = verificarCampos;
