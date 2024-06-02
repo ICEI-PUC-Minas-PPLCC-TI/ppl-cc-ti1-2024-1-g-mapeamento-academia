@@ -1,97 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../assets/cadastro_usuario.css">
-    <link rel="icon" type="image/png" href="../assets/img/logo_plataforma.png">
-    <title>Cadastro</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="../assets/cadastro_usuario.css">
+  <link rel="icon" type="image/png" href="../assets/img/logo_plataforma.png">
+  <title>Cadastro do usuário</title>
 </head>
-<body class="bg-black">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <section id="tela_cadastro" class="cadastro bg-warning">
-        <div class="mt-5 mb-5 bg-black p-5">
-            <div class="container">
-                <div class="card text-black rounded-4">
-                    <div class="card-body p-5">
-                        <p class="text-center h1 fw-bold mb-5">Cadastro de usuário</p>
-                        <div class="row mb-4">
-                            <div class="col-lg-6 col-sm-12 mb-4">
-                                <div class="">
-                                 <label for="nome_usuario" class="form-label fs-5">Nome</label>
-                                    <input type="text" class="form-control" id="nome_usuario" aria-describedby="ajuda_nome">
-                                    <div id="ajuda_nome" class="form-text ">Nome e sobrenomes completos</div>
-                                 </div>
-                                </div>
-                          <div class="col-lg-6 col-sm-12">
-                            <div>
-                                <label for="telefone_usuario" class="form-label fs-5">Telefone de contato</label>
-                                <input type="tel" class="form-control" id="telefone_usuario" aria-describedby="ajuda_tel">
-                                 <div id="ajuda_tel" class="form-text">DDD + Celular (xx) xxxxx-xxxx</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mb-5">
-                         <div class="col-4 mb-4">
-                            <div>
-                                <label for="cpf_usuario" class="form-label fs-5">CPF</label>
-                             <input type="number" class="form-control" id="cpf_usuario">
-                         </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 mb-4">
-                            <label for="data_usuario" class="form-label fs-5">Data de nascimento</label>
-                            <input type="date" class="form-control" id="data_usuario">
-                        </div>
-                        <div class="col-lg-5 col-md-12 mb-3">
-                            <h6 class="mb-2 pb-1 fw-bold fs-5">Gênero: </h6>
-                            <div class="form-check form-check-inline">
-                              <input class="form-check-input" type="radio" name="generos" value="feminino">
-                              <label class="form-check-label" for="feminino_gen">Feminino</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                              <input class="form-check-input" type="radio" name="generos" value="masculino" />
-                              <label class="form-check-label" for="masculino_gen">Masculino</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                              <input class="form-check-input" type="radio" name="generos" value="outro" />
-                              <label class="form-check-label" for="outro_gen">Outro</label>
-                            </div>
-                        </div>
-                    <div class="row  mt-2">
-                        <div class="col-md-6 mb-4">
-                            <h6 class="mb-2 pb-1 fw-bold fs-5">Estado: </h6>
-                            <select id="ESTADO" data-mdb-select-init class="rounded w-50">
-                              <option value="">Selecione um Estado</option>
-                            </select>
-                          </div>
-                          <div class="col-md-6 mb-4">
-                            <h6 class="mb-2 pb-1 fw-bold fs-5">Cidade: </h6>
-                            <select id="CIDADE" data-mdb-select-init class="rounded w-50">
-                              <option value="">Selecione uma Cidade</option>
-                            </select>
-                          </div>
-                    </div>
-                    <div class="row mb-5 mt-2">
-                        <div class="col-lg-5 col-sm-12">
-                            <div>
-                                <label for="email_usuario" class="form-label fs-5">Endereço de Email</label>
-                             <input type="email" class="form-control" id="email_usuario">
-                            </div>
-                        </div>
-                      </div>
-                            <div class="row mt-5">
-                              <div class="col-lg-3 col-md-3 col-sm-5">
-                                <a id="voltar" href="inicio.html" class="btn p-3 btn-danger botoes fw-bolder border-dark border-3" role="button">Voltar</a>
-                              </div>
-                              <div class="col-lg-9 col-md-9 col-sm-7">
-                                <button id="cadastrar" class="btn p-3 btn-success botoes fw-bolder border-dark border-3">Cadastrar</button>
-                              </div>
-                            </div>
-                    </div>
-                 </div>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <section id="tela_cadastro" class="cadastro bg-warning">
+    <div class="mt-5 mb-5 bg-black p-5">
+      <div class="container">
+        <div class="card text-black rounded-4 border border-5 border-warning">
+          <div class="card-body p-5">
+            <p class="text-center h1 fw-bold mb-5">Preencha as informações abaixo</p>
+            <div class="row mb-4">
+              <div class="col-lg-6 col-sm-12 mb-4">
+                <div class="">
+                  <label for="nome_usuario" class="form-label fs-5">Nome</label>
+                  <input type="text" class="form-control" id="nome_usuario" aria-describedby="ajuda_nome">
+                  <div id="ajuda_nome" class="form-text ">Nome e sobrenomes completos</div>
                 </div>
-        </section>
-    <script src="../assets/js/cadastro_usuario.js"></script>
-  </body>
+              </div>
+              <div class="col-lg-6 col-sm-12">
+                <div>
+                  <label for="telefone_usuario" class="form-label fs-5">Telefone de contato</label>
+                  <input type="tel" class="form-control" id="telefone_usuario" aria-describedby="ajuda_tel">
+                  <div id="ajuda_tel" class="form-text">DDD + Celular (xx) xxxxx-xxxx</div>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-5">
+              <div class="col-4 mb-4">
+                <div>
+                  <label for="cpf_usuario" class="form-label fs-5">CPF</label>
+                  <input type="number" class="form-control" id="cpf_usuario">
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4">
+                <label for="data_usuario" class="form-label fs-5">Data de nascimento</label>
+                <input type="date" class="form-control" id="data_usuario">
+              </div>
+              <div class="col-lg-5 col-md-12 mb-3">
+                <h6 class="mb-2 pb-1 fw-bold fs-5">Gênero: </h6>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="generos" value="feminino">
+                  <label class="form-check-label" for="feminino_gen">Feminino</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="generos" value="masculino" />
+                  <label class="form-check-label" for="masculino_gen">Masculino</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="generos" value="outro" />
+                  <label class="form-check-label" for="outro_gen">Outro</label>
+                </div>
+              </div>
+              <div class="row  mt-2">
+                <div class="col-md-6 mb-4">
+                  <h6 class="mb-2 pb-1 fw-bold fs-5">Estado: </h6>
+                  <select id="ESTADO" data-mdb-select-init class="rounded w-50">
+                    <option value="">Selecione um Estado</option>
+                  </select>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <h6 class="mb-2 pb-1 fw-bold fs-5">Cidade: </h6>
+                  <select id="CIDADE" data-mdb-select-init class="rounded w-50">
+                    <option value="">Selecione uma Cidade</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row mb-5 mt-2">
+                <div class="col-lg-5 col-sm-12">
+                  <div>
+                    <label for="email_usuario" class="form-label fs-5">Endereço de Email</label>
+                    <input type="email" class="form-control" id="email_usuario">
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-5">
+                <div class="col-lg-3 col-md-3 col-sm-5">
+                  <a id="voltar" href="inicio.html" class="btn p-3 btn-danger botoes fw-bolder border-dark border-3"
+                    role="button">Voltar</a>
+                </div>
+                <div class="col-lg-9 col-md-9 col-sm-7">
+                  <button id="cadastrar"
+                    class="btn p-3 btn-success botoes fw-bolder border-dark border-3">Cadastrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </section>
+  <script src="../assets/js/cadastro_usuario.js"></script>
+  <script>
+    function JSONcarrega() {
+      //pega todos os elementos de seleção do DOM
+      const selecionaEstado = document.querySelector("#ESTADO"),
+        selecionaCidade = document.querySelector("#CIDADE");
+
+      //desabilitar seleções de cidades inicialmente (pois por padrão o Estado é o primeiro a ser selecionado)
+      selecionaCidade.disabled = true;
+
+      //exibir as siglas dos estados no JSON 'selecionaEstado'
+      for (let i = 0; i < estadosInfo.estados.length; i++) {
+        let estado = estadosInfo.estados[i];
+        selecionaEstado.options[selecionaEstado.options.length] = new Option(
+          estado.sigla,
+          estado.sigla
+        );
+      }
+
+      //detecta se algo mudou no 'selecionaEstado'
+      selecionaEstado.onchange = function (e) {
+        selecionaCidade.disabled = false;
+        selecionaCidade.length = 1; //exclui todas as opções exceto a primeira (para mostrar a opção "selecione uma cidade")
+
+        //encontrar o estado selecionado no JSON 'estadosInfo'
+        let estadoSelecionado = estadosInfo.estados.find(estado => estado.sigla === e.target.value);
+        if (estadoSelecionado) {
+          //exibir as cidades do estado selecionado no 'selecionaCidade'
+          estadoSelecionado.cidades.forEach(cidade => {
+            selecionaCidade.options[selecionaCidade.options.length] = new Option(cidade, cidade);
+          });
+        }
+      };
+    }
+    carregaJSONServer(JSONcarrega)
+  </script>
+</body>
+
 </html>
