@@ -4,10 +4,6 @@
     align-content: center;
 }
 
-#tela_cadastro{
-    background-color: gray;
-}
-
 select {
     border-radius: 0.25em;
     padding: 0.2em 0.2em;
