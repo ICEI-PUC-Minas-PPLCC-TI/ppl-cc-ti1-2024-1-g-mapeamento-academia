@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +7,26 @@
     <title>Pagamento</title>
 </head>
 <body>
+    <script src="../assets/js/pagamento.js"></script>
+
+    <header>
+        <div class="logo">
+            <img src="../assets/img/logo_plataforma.png" alt="">
+        </div>
+    </header>
+
     <section class="pag">
 
         <div id="opcoes">
-            <button onclick="mostrarform('credito')">Crédito</button>
-            <button onclick="mostrarform('debito')">Débito</button>
-            <button onclick="mostrarform('pix')">Pix</button>
+            <button onclick="mostrarform('credito')" id="credito-btn">Crédito</button>
+            <button onclick="mostrarform('debito')" id="debito-btn">Débito</button>
+            <button onclick="mostrarform('pix')" id="pix-btn">Pix</button>
         </div>
 
         <div class="form">
-            <div id="dadoscartao" class="esconde">
+            <div id="dadoscartaoC" class="esconde">
+
+                <h2>Cartão de Crédito</h2>
 
                 <div class="form100">
                     <input type="text" id="email" placeholder="Email" required>
@@ -26,7 +36,7 @@
                     <input type="text" id="numerodocartao" placeholder="Número do Cartão" required>
                     
                     <div class="form50">
-                        <input type="text" id="validade" placeholder="Validade" required>
+                        <input type="text" id="validade" placeholder="Vencimento" required>
                         <input type="text" id="CVC" placeholder="CVC" required>
                     </div>
                 
@@ -38,19 +48,52 @@
                     <input type="text" id="cpfCartao" placeholder="CPF" required>
                 </div>
                 <div class="form100">
-                    <button id="botaopag" onclick="processarpag()" disabled>Pagar</button>
+                    <button id="botaopag" onclick="processarpag()">Efetuar Pagamento</button>
+                </div>
+
+            </div>
+
+
+            <div id="dadoscartaoD" class="esconde">
+
+                <h2>Cartão de Débito</h2>
+
+                <div class="form100">
+                    <input type="text" id="email" placeholder="Email" required>
+                </div>
+
+                <div class="form100">
+                    <input type="text" id="numerodocartao" placeholder="Número do Cartão" required>
+                    
+                    <div class="form50">
+                        <input type="text" id="validade" placeholder="Vencimento" required>
+                        <input type="text" id="CVC" placeholder="CVC" required>
+                    </div>
+                
+                </div>
+                <div class="form100">
+                    <input type="text" id="nomecartao" placeholder="Nome no Cartão" required>
+                </div>
+                <div class="form100">
+                    <input type="text" id="cpfCartao" placeholder="CPF" required>
+                </div>
+
+                <div class="form100">
+                    <button id="botaopag" onclick="processarpag()">Efetuar Pagamento</button>
                 </div>
 
             </div>
 
             <div id="dadospix" class="esconde">
+                <h2>Pix</h2>
                 <input type="text" id="cpfPix" placeholder="CPF" required>
                 <div class="form100">
                     <button onclick="codigo()">Código de pagamento</button>
                 </div>
             </div>
         </div>
+
     </section>
-    <script src="../assets/js/pagamento.js"></script>
+   
 </body>
 </html>
