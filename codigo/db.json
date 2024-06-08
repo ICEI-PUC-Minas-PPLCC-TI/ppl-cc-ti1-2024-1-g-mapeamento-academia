@@ -1,0 +1,87 @@
+{
+  "users": [
+    {
+      "name": "lixo2",
+      "cpf": "3245345",
+      "email": "l@gmail.com",
+      "id": "09ed"
+    },
+    {
+      "id": "f52d",
+      "name": "alice",
+      "cpf": "456234456",
+      "email": "a@gmail.com",
+      "password": "123"
+    }
+  ],
+  "academies": [
+    {
+      "id": "b080",
+      "name": "SmartFit",
+      "location": "Salvador - BA",
+      "address": "R. Waldemar Falcão, 323",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
+      "password": "sf"
+    },
+    {
+      "id": "4955",
+      "name": "BlueFit",
+      "location": "João Pessoa - PB",
+      "address": "Avenida Presidente Epitacio Pessoa, 1400",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP5OjvZ4jbCRkskh4bm3d6zzDLUOKyHiyvGA&s",
+      "password": "bf"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "607b",
+      "userId": 1,
+      "academyId": "b080",
+      "rating": 5,
+      "comment": "boa"
+    },
+    {
+      "id": "f194",
+      "userId": 1,
+      "academyId": "b080",
+      "rating": 3,
+      "comment": "ok"
+    },
+    {
+      "id": "a11e",
+      "userId": "f52d",
+      "academyId": "b080",
+      "rating": 4,
+      "comment": "legal"
+    },
+    {
+      "id": "6efd",
+      "userId": "f52d",
+      "academyId": "b080",
+      "rating": 5,
+      "comment": "legal"
+    }
+  ],
+  "favorites": [
+    {
+      "id": "d3cf",
+      "userId": "f52d",
+      "academyId": "b080"
+    },
+    {
+      "id": "a237",
+      "userId": "09ed",
+      "academyId": "4955"
+    },
+    {
+      "id": "a830",
+      "userId": "09ed",
+      "academyId": "b080"
+    },
+    {
+      "id": "1e4a",
+      "userId": "f52d",
+      "academyId": "4955"
+    }
+  ]
+}

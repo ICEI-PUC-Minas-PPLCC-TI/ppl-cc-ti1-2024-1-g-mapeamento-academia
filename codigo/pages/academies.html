@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academias</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header-placeholder"></div>
+    <h1>Academias</h1>
+    <input type="text" id="search" placeholder="Buscar academias...">
+    <table>
+        <thead>
+            <tr>
+                <th onclick="sortTable(0)">Nome</th>
+                <th onclick="sortTable(1)">Localização</th>
+                <th onclick="sortTable(2)">Avaliação</th>
+            </tr>
+        </thead>
+        <tbody id="academiesTableBody">
+            <!-- Lista de academias será inserida aqui -->
+        </tbody>
+    </table>
+    <script src="../js/header.js"></script>
+    <script src="../js/session.js"></script>
+    <script src="../js/academies.js"></script>
+</body>
+
+</html>

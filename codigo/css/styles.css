@@ -1,0 +1,211 @@
+/* Cores Pastel */
+body {
+    background-color: #f8f8f8; /* Cinza claro */
+}
+
+/* /mnt/data/ti_project/ti/ti-1/css/global.css */
+
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #FFC107;
+    --text-color: #333;
+    --background-color: #f4f4f4;
+    --font-family: 'Arial, sans-serif';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+header {
+    background: var(--primary-color);
+    color: white;
+    padding: 1rem;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darken(var(--secondary-color), 10%);
+}
+
+#hero {
+    background-image: url('hero-image.jpg'); /* Substitua por sua imagem */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 80px 0;
+    color: #333; /* Preto */
+}
+
+#hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #f0d849; /* Amarelo pastel */
+}
+
+#hero p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color: #6c757d; /* Cinza médio */
+}
+
+#hero .btn {
+    background-color: #f0d849; /* Amarelo pastel */
+    color: #fff; /* Branco */
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#hero .btn:hover {
+    background-color: #c6b23b; /* Amarelo escuro */
+}
+
+/* Seção About */
+#about {
+    padding: 40px 0;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Seção Features */
+#features {
+    padding: 40px 0;
+    background-color: #f8f8f8;
+}
+
+#features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#features li {
+    margin-bottom: 20px;
+}
+
+#features li:before {
+    content: "✓";
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+/* Seção Call to Action */
+#call-to-action {
+    padding: 40px 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+#call-to-action h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#call-to-action .btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#call-to-action .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        flex-direction: column; /* Logo em coluna em telas menores */
+        align-items: flex-start; /* Alinha à esquerda */
+        margin-bottom: 10px; /* Espaço abaixo da logo */
+    }
+
+    .logo img {
+        width: 50px; /* Reduza o tamanho da logo */
+    }
+
+    nav ul {
+        flex-direction: column; /* Navegação em coluna */
+        align-items: flex-start; /* Alinha à esquerda */
+    }
+
+    nav li {
+        margin-bottom: 5px; /* Espaço entre os itens da navegação */
+    }
+    
+    #hero h2 {
+        font-size: 28px;
+    }
+
+    #hero p {
+        font-size: 14px;
+    }
+
+    #features ul {
+        flex-direction: column; /* Organiza itens em coluna */
+    }
+
+    #features li {
+        margin-bottom: 10px;
+    }
+}
