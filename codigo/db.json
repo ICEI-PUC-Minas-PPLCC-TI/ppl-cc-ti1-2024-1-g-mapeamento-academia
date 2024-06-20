@@ -12,6 +12,20 @@
       "cpf": "456234456",
       "email": "a@gmail.com",
       "password": "123"
+    },
+    {
+      "id": "b872",
+      "name": "teste",
+      "cpf": "123312",
+      "email": "teste@gmai.com",
+      "password": "123"
+    },
+    {
+      "id": "4445",
+      "name": "teste123",
+      "cpf": "321231123",
+      "email": "teste@email.com",
+      "password": "123"
     }
   ],
   "academies": [
@@ -82,6 +96,11 @@
       "id": "1e4a",
       "userId": "f52d",
       "academyId": "4955"
+    },
+    {
+      "id": "3450",
+      "userId": "4445",
+      "academyId": "b080"
     }
   ]
 }

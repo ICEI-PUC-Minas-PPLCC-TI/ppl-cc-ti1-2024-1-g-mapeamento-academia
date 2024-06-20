@@ -25,7 +25,9 @@ body {
     background-color: var(--background-color);
 }
 
-header {
+/* Antigo Css do Header */
+
+/* header {
     background: var(--primary-color);
     color: white;
     padding: 1rem;
@@ -46,7 +48,7 @@ header nav ul {
 header nav ul li a {
     color: white;
     text-decoration: none;
-}
+} */
 
 button {
     background: var(--secondary-color);
@@ -184,15 +186,6 @@ footer p {
         width: 50px; /* Reduza o tamanho da logo */
     }
 
-    nav ul {
-        flex-direction: column; /* Navegação em coluna */
-        align-items: flex-start; /* Alinha à esquerda */
-    }
-
-    nav li {
-        margin-bottom: 5px; /* Espaço entre os itens da navegação */
-    }
-    
     #hero h2 {
         font-size: 28px;
     }

@@ -1,38 +1,48 @@
-document.addEventListener('DOMContentLoaded', (event) => {
-    checkLogin();
-});
-
 function checkLogin() {
     const user = JSON.parse(sessionStorage.getItem('user'));
     const academy = JSON.parse(sessionStorage.getItem('academy'));
 
+    // Função auxiliar para alternar a classe 'd-none' (usada para desativar um elemento no Bootstrap)
+    function toggleVisibility(elementId, shouldShow) {
+        const element = document.getElementById(elementId);
+        if (element) {
+            if (shouldShow) {
+                element.classList.remove('d-none'); // Mostra o elemento
+            } else {
+                element.classList.add('d-none'); // Oculta o elemento
+            }
+        }
+    }
+
+    // Verifica se o usuário ou academia está logado e ajusta a visibilidade dos elementos dinâmicamente
     if (user) {
-        toggleDisplay('nav-login-user', false);
-        toggleDisplay('nav-login-academy', false);
-        toggleDisplay('nav-dashboard-user', true);
-        toggleDisplay('nav-dashboard-academy', false);
-        toggleDisplay('nav-logout', true);
+        toggleVisibility('nav-start', false);
+        toggleVisibility('nav-search', true);
+        toggleVisibility('nav-favorites', true);
+        toggleVisibility('nav-dashboard-user', true);
+        toggleVisibility('nav-dashboard-academy', false);
+        toggleVisibility('nav-logout', true);
     } else if (academy) {
-        toggleDisplay('nav-login-user', false);
-        toggleDisplay('nav-login-academy', false);
-        toggleDisplay('nav-dashboard-user', false);
-        toggleDisplay('nav-dashboard-academy', true);
-        toggleDisplay('nav-logout', true);
+        toggleVisibility('nav-start', false);
+        toggleVisibility('nav-search', true);
+        toggleVisibility('nav-favorites', false);
+        toggleVisibility('nav-dashboard-user', false);
+        toggleVisibility('nav-dashboard-academy', true);
+        toggleVisibility('nav-logout', true);
     } else {
-        toggleDisplay('nav-login-user', true);
-        toggleDisplay('nav-login-academy', true);
-        toggleDisplay('nav-dashboard-user', false);
-        toggleDisplay('nav-dashboard-academy', false);
-        toggleDisplay('nav-logout', false);
+        toggleVisibility('nav-start', true);
+        toggleVisibility('nav-search', false);
+        toggleVisibility('nav-favorites', false);
+        toggleVisibility('nav-dashboard-user', false);
+        toggleVisibility('nav-dashboard-academy', false);
+        toggleVisibility('nav-logout', false);
     }
 }
 
-function toggleDisplay(elementId, show) {
-    const element = document.getElementById(elementId);
-    if (element) {
-        element.style.display = show ? 'block' : 'none';
-    }
-}
+//checkLogin após a definição da função para atualizar a barra de navegaçaão
+document.addEventListener('DOMContentLoaded', (event) => {
+    checkLogin();
+});
 
 function loginUser(user) {
     sessionStorage.setItem('user', JSON.stringify(user));
