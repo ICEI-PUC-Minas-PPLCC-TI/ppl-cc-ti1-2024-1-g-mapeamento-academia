@@ -24,30 +24,20 @@ body {
     background-color: var(--background-color);
 }
 
-/* Antigo Css do Header */
-
-/* header {
-    background: var(--primary-color);
-    color: white;
-    padding: 1rem;
+/* Novo CSS do Header */
+header, header * {
+  font-family: var(--bs-font-sans-serif);
 }
 
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.cor_primaria{
+  background-color: rgb(200, 0, 0);
 }
 
-header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
+.bordas_primaria{
+  border-color: rgb(200, 0, 0) !important;
 }
 
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-} */
+
 
 button {
     background: var(--secondary-color);
