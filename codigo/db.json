@@ -74,6 +74,13 @@
       "academyId": "b080",
       "rating": 5,
       "comment": "legal"
+    },
+    {
+      "id": "cb65",
+      "userId": "4445",
+      "academyId": "4955",
+      "rating": 5,
+      "comment": "horrivel. mas é barata"
     }
   ],
   "favorites": [
@@ -101,6 +108,11 @@
       "id": "3450",
       "userId": "4445",
       "academyId": "b080"
+    },
+    {
+      "id": "5c82",
+      "userId": "4445",
+      "academyId": "4955"
     }
   ]
 }

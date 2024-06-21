@@ -58,4 +58,5 @@ function logout() {
     sessionStorage.removeItem('user');
     sessionStorage.removeItem('academy');
     checkLogin();
+    window.location.href = '../index.html'; // Redireciona o usuário para a página de apresentação (agr deve estar funcionando corretamente)
 }

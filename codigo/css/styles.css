@@ -25,6 +25,10 @@ body {
     background-color: var(--background-color);
 }
 
+header, header * {
+    font-family: 'Segoe UI', sans-serif !important;
+}
+
 /* Antigo Css do Header */
 
 /* header {
