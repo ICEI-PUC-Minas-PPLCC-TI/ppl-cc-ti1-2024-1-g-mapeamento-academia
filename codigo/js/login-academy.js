@@ -1,9 +1,9 @@
 document.getElementById('loginAcademyForm').addEventListener('submit', async (event) => {
     event.preventDefault();
-    const name = document.getElementById('name').value;
+    const name = document.getElementById('login').value;
     const password = document.getElementById('password').value;
 
-    const response = await fetch(`http://localhost:3000/academies?name=${name}&password=${password}`);
+    const response = await fetch(`http://localhost:3000/academies?login=${login}&password=${password}`);
     const academies = await response.json();
 
     if (academies.length > 0) {
