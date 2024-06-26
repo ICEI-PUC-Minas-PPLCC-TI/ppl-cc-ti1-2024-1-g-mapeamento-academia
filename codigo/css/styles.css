@@ -1,105 +1,159 @@
 body {
-    background-color: #f8f8f8; /* Cinza claro */
+  background-color: #f8f8f8; /* Cinza claro */
 }
 
 /* /mnt/data/ti_project/ti/ti-1/css/global.css */
 
 :root {
-    --primary-color: #4CAF50;
-    --secondary-color: #FFC107;
-    --text-color: #333;
-    --background-color: #f4f4f4;
-    --font-family: 'Arial, sans-serif';
+  --primary-color: #4CAF50;
+  --secondary-color: #FFC107;
+  --text-color: #333;
+  --background-color: #f4f4f4;
+  --font-family: 'Arial, sans-serif';
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: var(--font-family);
-    color: var(--text-color);
-    background-color: var(--background-color);
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
 
 /* Novo CSS do Header */
 header, header * {
-  font-family: var(--bs-font-sans-serif);
+font-family: var(--bs-font-sans-serif);
 }
 
 .cor_primaria{
-  background-color: rgb(200, 0, 0);
+background-color: rgb(200, 0, 0);
 }
 
 .bordas_primaria{
-  border-color: rgb(200, 0, 0) !important;
+border-color: rgb(200, 0, 0) !important;
 }
 
 
 
 button {
-    background: var(--secondary-color);
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
+  background: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
 }
 
 button:hover {
-    background: darken(var(--secondary-color), 10%);
+  background: darken(var(--secondary-color), 10%);
 }
 
 #hero {
-    background-image: url('hero-image.jpg'); /* Substitua por sua imagem */
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  input[type="password"] {
-    width: 300px;  
-    padding: 8px 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  button {
-    width: 120px;  
-    padding: 10px;
-    background-color: red;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-weight: bold;
-    font-size: 16px;
-  }
-  
-  button:hover {
-    background-color: darkred;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  background-image: url('hero-image.jpg'); 
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: bold;
+}
 
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 300px;  
+  padding: 8px 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  width: 120px;  
+  padding: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: darkred;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Favorito*/
+.favorito h1 { /*texto "academias favoritas"*/
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.favorito ul { /*bloco de favorito de ponta a ponta*/
+  list-style-type: none;
+  padding: 0;
+}
+
+.favorito ul li {/*Alterando cabeçalho*/
+  display: flex;
+  align-items: center;
   
+  margin-bottom: 10px;
+
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.favorito ul li img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  border-radius: 8px;
+  background-color: #e0e0e0;
+}
+
+.favorito ul li div {
+  flex: 1;
+}
+
+.favorito ul li div p {
+  margin: 0;
+}
+
+.favorito ul li button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.favorito ul li button:hover {
+  background-color: darkred;
+}
+
+/*Configuração do Usuario*/
+
