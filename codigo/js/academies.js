@@ -164,27 +164,43 @@ function filterAcademies() {
     const foundAcademiesStr = foundAcademies.map(id => id.toString());
   
     // Remove marcadores que não estão na lista de IDs encontrados
-    for (let id in allMarkers) {
+    Object.keys(allMarkers).forEach(id => {
       if (!foundAcademiesStr.includes(id)) {
         map.removeLayer(allMarkers[id]);
         delete allMarkers[id]; // Importante remover a referência do marcador
         console.log(`Marcador removido: ${id}`); // Depuração
       }
-    }
+    });
   
-    // Adiciona marcadores que estão na lista de IDs encontrados
     for (let id of foundAcademiesStr) {
-      const academy = allAcademies.find(academy => academy.id.toString() === id);
-      if (academy && !map.hasLayer(allMarkers[id])) {
-        const latLng = await getLatLngFromAddress(academy.location);
-        const marker = L.marker(latLng).addTo(map);
-        marker.bindPopup(`<a href="academy-details.html?id=${academy.id}" target="_blank">${academy.name}</a>`);
-        marker.bindTooltip(academy.name, {permanent: true, direction: 'top'}).openTooltip();
-        marker.on('click', function() {
-          window.location.href = `academy-details.html?id=${academy.id}`; // Link para abrir corretamente ao clicar no ícone do marcador
-        });
-        allMarkers[id] = marker; // Garante que o ID seja uma string
-        console.log(`Marcador adicionado: ${academy.name}`); // Depuração
+      if (!allMarkers[id]) {
+        const academy = allAcademies.find(academy => academy.id.toString() === id);
+        if (academy) {
+          const latLng = await getLatLngFromAddress(academy.address);
+          if (latLng) { // Verifica se latLng não é null
+            const marker = L.marker(latLng, {
+              title: academy.name // Define o título do marcador com o nome da academia
+            }).addTo(map);
+  
+            marker.bindPopup(`<a href="academy-details.html?id=${academy.id}" target="_blank">${academy.name}</a>`);
+            
+            // Adiciona a tooltip
+            marker.bindTooltip(academy.name, {
+              permanent: true,
+              direction: 'top'
+            }).openTooltip();
+  
+            // Restaura a funcionalidade de clique
+            marker.on('click', function() {
+              window.location.href = `academy-details.html?id=${academy.id}`;
+            });
+  
+            allMarkers[id] = marker; // Garante que o ID seja uma string
+            console.log(`Marcador adicionado: ${academy.name}`); // Depuração
+          } else {
+            console.log(`Não foi possível encontrar o endereço: ${academy.location}`);
+          }
+        }
       }
     }
   }
