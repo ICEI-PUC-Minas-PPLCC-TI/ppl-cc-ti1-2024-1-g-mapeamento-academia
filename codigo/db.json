@@ -30,89 +30,211 @@
   ],
   "academies": [
     {
+      "login": "smartfit00",
       "id": "b080",
       "name": "SmartFit",
       "location": "Salvador - BA",
-      "address": "R. Waldemar Falcão, 323",
+      "address": "Rua Waldemar Falcão, 323, Salvador",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
       "password": "sf"
     },
     {
+      "login": "bluefit1",
       "id": "4955",
       "name": "BlueFit",
       "location": "João Pessoa - PB",
-      "address": "Avenida Presidente Epitacio Pessoa, 1400",
+      "address": "Avenida Presidente Epitacio Pessoa, 1400, João Pessoa",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP5OjvZ4jbCRkskh4bm3d6zzDLUOKyHiyvGA&s",
       "password": "bf"
-    }
-  ],
-  "reviews": [
-    {
-      "id": "607b",
-      "userId": 1,
-      "academyId": "b080",
-      "rating": 5,
-      "comment": "boa"
     },
     {
-      "id": "f194",
-      "userId": 1,
-      "academyId": "b080",
-      "rating": 3,
-      "comment": "ok"
+      "login": "smartfit01",
+      "id": "2640",
+      "name": "SmartFit",
+      "location": "Belo Horizonte - MG",
+      "address": "Rua Fernandes Tourinho, 195, Savassi, Belo Horizonte",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
+      "password": "123"
     },
     {
-      "id": "a11e",
-      "userId": "f52d",
-      "academyId": "b080",
-      "rating": 4,
-      "comment": "legal"
+      "login": "smartfit1",
+      "id": "1001",
+      "name": "SmartFit",
+      "location": "São Paulo - SP",
+      "address": "Avenida Jabaquara, 1381 - Mirandópolis",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
+      "password": "123"
     },
     {
-      "id": "6efd",
-      "userId": "f52d",
-      "academyId": "b080",
-      "rating": 5,
-      "comment": "legal"
+      "login": "smartfit2",
+      "id": "1002",
+      "name": "SmartFit",
+      "location": "São Paulo - SP",
+      "address": "Alameda Santos, 1347 - Cerqueira César",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
+      "password": "123"
     },
     {
-      "id": "cb65",
-      "userId": "4445",
-      "academyId": "4955",
-      "rating": 5,
-      "comment": "horrivel. mas é barata"
-    }
-  ],
-  "favorites": [
-    {
-      "id": "d3cf",
-      "userId": "f52d",
-      "academyId": "b080"
+      "login": "smartfit3",
+      "id": "1003",
+      "name": "SmartFit",
+      "location": "Brasília - DF",
+      "address": "Quadra CL 115 - Santa Maria",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
+      "password": "123"
     },
     {
-      "id": "a237",
-      "userId": "09ed",
-      "academyId": "4955"
+      "login": "smartfit4",
+      "id": "1004",
+      "name": "SmartFit",
+      "location": "São Paulo - SP",
+      "address": "Avenida Morumbi, 6340 - Morumbi",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
+      "password": "123"
     },
     {
-      "id": "a830",
-      "userId": "09ed",
-      "academyId": "b080"
+      "login": "smartfit5",
+      "id": "1005",
+      "name": "SmartFit",
+      "location": "Rio de Janeiro - RJ",
+      "address": "Avenida das Américas, 500 - Barra da Tijuca",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
+      "password": "123"
     },
     {
-      "id": "1e4a",
-      "userId": "f52d",
-      "academyId": "4955"
+      "login": "smartfit6",
+      "id": "1006",
+      "name": "SmartFit",
+      "location": "Belo Horizonte - MG",
+      "address": "Avenida do Contorno, 6061 - Savassi",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
+      "password": "123"
     },
     {
-      "id": "3450",
-      "userId": "4445",
-      "academyId": "b080"
+      "login": "smartfit7",
+      "id": "1007",
+      "name": "SmartFit",
+      "location": "Porto Alegre - RS",
+      "address": "Avenida Assis Brasil, 4320 - Sarandi",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
+      "password": "123"
     },
     {
-      "id": "5c82",
-      "userId": "4445",
-      "academyId": "4955"
+      "login": "smartfit8",
+      "id": "1008",
+      "name": "SmartFit",
+      "location": "Curitiba - PR",
+      "address": "Rua Brigadeiro Franco, 2300 - Água Verde",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
+      "password": "123"
+    },
+    {
+      "login": "smartfit9",
+      "id": "1009",
+      "name": "SmartFit",
+      "location": "Recife - PE",
+      "address": "Rua Padre Carapuceiro, 777 - Boa Viagem",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
+      "password": "123"
+    },
+    {
+      "login": "smartfit10",
+      "id": "1010",
+      "name": "SmartFit",
+      "location": "Salvador - BA",
+      "address": "Avenida Antônio Carlos Magalhães, 1034 - Itaigara",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
+      "password": "123"
+    },
+    {
+      "login": "smartfit11",
+      "id": "1011",
+      "name": "SmartFit",
+      "location": "Fortaleza - CE",
+      "address": "Avenida Washington Soares, 85 - Edson Queiroz",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
+      "password": "123"
+    },
+    {
+      "login": "smartfit12",
+      "id": "1012",
+      "name": "SmartFit",
+      "location": "Manaus - AM",
+      "address": "Avenida Djalma Batista, 482 - Chapada",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
+      "password": "123"
+    },
+    {
+      "login": "smartfit13",
+      "id": "1013",
+      "name": "SmartFit",
+      "location": "Belém - PA",
+      "address": "Travessa Padre Eutíquio, 1078 - Batista Campos",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
+      "password": "123"
+    },
+    {
+      "login": "smartfit14",
+      "id": "1014",
+      "name": "SmartFit",
+      "location": "Goiânia - GO",
+      "address": "Avenida T-10, 1300 - Setor Bueno",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
+      "password": "123"
+    },
+    {
+      "login": "smartfit15",
+      "id": "1015",
+      "name": "SmartFit",
+      "location": "Vitória - ES",
+      "address": "Avenida Américo Buaiz, 200 - Enseada do Suá",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
+      "password": "123"
+    },
+    {
+      "login": "smartfit16",
+      "id": "1016",
+      "name": "SmartFit",
+      "location": "Campo Grande - MS",
+      "address": "Avenida Afonso Pena, 4909 - Santa Fé",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
+      "password": "123"
+    },
+    {
+      "login": "smartfit17",
+      "id": "1017",
+      "name": "SmartFit",
+      "location": "Cuiabá - MT",
+      "address": "Avenida Historiador Rubens de Mendonça, 3300 - Baú",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
+      "password": "123"
+    },
+    {
+      "login": "smartfit18",
+      "id": "1018",
+      "name": "SmartFit",
+      "location": "João Pessoa - PB",
+      "address": "Avenida Presidente Epitácio Pessoa, 1251 - Estados",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
+      "password": "123"
+    },
+    {
+      "login": "smartfit19",
+      "id": "1019",
+      "name": "SmartFit",
+      "location": "Natal - RN",
+      "address": "Avenida Senador Salgado Filho, 2234 - Lagoa Nova",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
+      "password": "123"
+    },
+    {
+      "login": "smartfit20",
+      "id": "1020",
+      "name": "SmartFit",
+      "location": "Aracaju - SE",
+      "address": "Avenida Ministro Geraldo Barreto Sobral, 215 - Jardins",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
+      "password": "123"
     }
   ]
 }
