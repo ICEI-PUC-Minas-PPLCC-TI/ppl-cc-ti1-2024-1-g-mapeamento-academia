@@ -22,15 +22,15 @@ server.post('/users', (req, res) => {
 });
 
 server.post('/academies', (req, res) => {
-    const { name, location, address, image, password } = req.body;
+    const { login, name, location, address, image, password } = req.body;
     const db = router.db;
-    const academyExists = db.get('academies').find({ name }).value();
+    const academyExists = db.get('academies').find({ login }).value();
 
     if (academyExists) {
         res.status(400).send({ message: 'Academia já existe.' });
     } else {
         const id = Date.now().toString(); // Generate a simple unique ID
-        db.get('academies').push({ id, name, location, address, image, password }).write();
+        db.get('academies').push({ login, id, name, location, address, image, password }).write();
         res.status(201).send({ message: 'Academia cadastrada com sucesso.' });
     }
 });
