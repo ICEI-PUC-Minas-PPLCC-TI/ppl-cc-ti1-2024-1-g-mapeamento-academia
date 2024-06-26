@@ -1,8 +1,11 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
+    // Obter o ID da academia a partir da URL
     const params = new URLSearchParams(window.location.search);
     const academyId = params.get('id');
-    fetchAcademyDetails(academyId);
+
+    await fetchAcademyDetails(academyId);
     fetchReviews(academyId);
+    checkIfFavorite(academyId); //checagem para verificar se essa página está nos favoritos
 
     document.getElementById('train-here-btn').addEventListener('click', () => {
         redirectToPayment(academyId);
@@ -11,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('favorite-btn').addEventListener('click', () => {
         addToFavorites(academyId);
     });
+
 
     document.getElementById('reviewForm').addEventListener('submit', async (event) => {
         event.preventDefault();
@@ -24,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const rating = parseFloat(document.getElementById('rating').value);
         const comment = document.getElementById('comment').value;
 
+        // Enviar avaliação
         const response = await fetch('http://localhost:3000/reviews', {
             method: 'POST',
             headers: {
@@ -85,26 +90,60 @@ function redirectToPayment(academyId) {
     window.location.href = `payment.html?academyId=${academyId}`;
 }
 
-async function addToFavorites(academyId) {
+
+//Checar se a página estpá na lista de favoritos do usuário
+// Função para verificar se a academia já está nos favoritos
+async function checkIfFavorite(academyId) {
     const user = JSON.parse(sessionStorage.getItem('user'));
-    if (!user) {
-        alert('Usuário não está logado.');
-        window.location.href = 'login.html';
-        return;
+    if (user) {
+        const userId = user.id;
+        const favorites = await fetch(`http://localhost:3000/favorites?userId=${userId}`);
+        const favoritesData = await favorites.json();
+        const isFavorite = favoritesData.some(favorite => favorite.academyId === academyId);
+        
+        const favoriteBtn = document.getElementById('favorite-btn');
+        if (isFavorite) {
+            favoriteBtn.classList.add('btn-danger');
+            favoriteBtn.disabled = true;
+            favoriteBtn.innerText = 'Já está nos favoritos';
+        } else {
+            favoriteBtn.classList.remove('btn-danger');
+            favoriteBtn.disabled = false;
+            favoriteBtn.innerText = 'Adicionar aos Favoritos';
+        }
     }
-    const userId = user.id; // Obter o ID do usuário logado
+}
 
-    const response = await fetch('http://localhost:3000/favorites', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ userId, academyId })
-    });
 
-    if (response.ok) {
-        alert('Academia adicionada aos favoritos!');
-    } else {
-        alert('Erro ao adicionar aos favoritos, tente novamente.');
+// Função para adicionar a academia aos favoritos
+async function addToFavorites(academyId) {
+    try {
+        const user = JSON.parse(sessionStorage.getItem('user'));
+        if (!user) {
+            alert('Usuário não está logado.');
+            window.location.href = 'login.html';
+            return;
+        }
+        const userId = user.id; // Obter o ID do usuário logado
+
+        // Enviar requisição para adicionar aos favoritos
+        const response = await fetch('http://localhost:3000/favorites', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ userId, academyId })
+        });
+
+        if (response.ok) {
+            alert('Academia adicionada aos favoritos!');
+        } else {
+            const error = await response.text(); // Ou response.json() se o servidor retornar JSON
+            console.error('Falha ao adicionar aos favoritos:', error);
+            alert('Erro ao adicionar aos favoritos, tente novamente.');
+        }
+    } catch (error) {
+        console.error('Erro na requisição:', error);
+        alert('Erro ao processar a requisição, tente novamente.');
     }
 }

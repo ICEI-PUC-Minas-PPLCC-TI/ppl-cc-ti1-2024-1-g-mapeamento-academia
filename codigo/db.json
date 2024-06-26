@@ -236,5 +236,12 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
       "password": "123"
     }
+  ],
+  "favorites": [
+    {
+      "id": "5a66",
+      "userId": "4445",
+      "academyId": "4955"
+    }
   ]
 }
