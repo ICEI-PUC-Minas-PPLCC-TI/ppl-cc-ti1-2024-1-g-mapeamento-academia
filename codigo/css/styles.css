@@ -178,28 +178,31 @@ form {
   background-color: darkred;
 }
 
-.escolhaLogin {
+.escolhaLoginRegistro {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   text-align: center;
+  background-color: #f0f0f0;
 }
 
-.escolhaRegistro{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  text-align: center;
+.caixaLoginRegistro{
+  position: relative;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 .botoes{
   display: flex;
   justify-content: center;
   gap: 1rem;
+  margin-top: 40px;
 }
 
 
