@@ -178,5 +178,31 @@ form {
   background-color: darkred;
 }
 
+.escolhaLogin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.escolhaRegistro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.botoes{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+
+
 /*Configuração do Usuario*/
 
