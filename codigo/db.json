@@ -242,6 +242,11 @@
       "id": "5a66",
       "userId": "4445",
       "academyId": "4955"
+    },
+    {
+      "id": "9b26",
+      "userId": "f52d",
+      "academyId": "4955"
     }
   ],
   "reviews": [
@@ -279,6 +284,20 @@
       "academyId": "4955",
       "rating": 5,
       "comment": "horrivel. mas é barata"
+    },
+    {
+      "id": "68ff",
+      "userId": "f52d",
+      "academyId": "4955",
+      "rating": 5,
+      "comment": "boa"
+    },
+    {
+      "id": "fb9a",
+      "userId": "f52d",
+      "academyId": "4955",
+      "rating": 2,
+      "comment": "muito ruim"
     }
   ]
 }
