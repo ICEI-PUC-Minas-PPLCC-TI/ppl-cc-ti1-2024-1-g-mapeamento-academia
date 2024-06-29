@@ -244,4 +244,41 @@
       "academyId": "4955"
     }
   ]
+  "reviews": [
+    {
+      "id": "607b",
+      "userId": 1,
+      "academyId": "b080",
+      "rating": 5,
+      "comment": "boa"
+    },
+    {
+      "id": "f194",
+      "userId": 1,
+      "academyId": "b080",
+      "rating": 3,
+      "comment": "ok"
+    },
+    {
+      "id": "a11e",
+      "userId": "f52d",
+      "academyId": "b080",
+      "rating": 4,
+      "comment": "legal"
+    },
+    {
+      "id": "6efd",
+      "userId": "f52d",
+      "academyId": "b080",
+      "rating": 5,
+      "comment": "legal"
+    },
+    {
+      "id": "cb65",
+      "userId": "4445",
+      "academyId": "4955",
+      "rating": 5,
+      "comment": "horrivel. mas é barata"
+    }
+  ]
 }
