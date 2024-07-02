@@ -22,7 +22,7 @@ async function fetchUserDetails(id) {
 }
 
 function displayUserDetails(user) {
-    document.getElementById('user-name').textContent = user.name;
+    document.getElementById('user-name').innerHTML += `<strong>${user.name}<strong>`;
     document.getElementById('user-cpf').textContent = `CPF: ${user.cpf}`;
     document.getElementById('user-email').textContent = `Email: ${user.email}`;
 }

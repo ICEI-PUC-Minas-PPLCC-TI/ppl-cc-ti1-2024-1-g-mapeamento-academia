@@ -10,6 +10,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="icon" type="image/png" href="img/logo_white.png">
     <title>Academy Map - Encontre sua academia ideal!</title>
 </head>
@@ -41,12 +42,15 @@
                             <a class="nav-link fs-5 fw-bold text-light text-center" href="#suporte">Suporte</a>
                         </li>
                         <li class="nav-item mx-4 bg-success rounded-3 d-flex justify-content-center align-items-center">
-                            <a class="nav-link fs-5 fw-bold px-5 text-light text-center" href="pages/choose-login.html">Entrar</a>
+                            <a class="nav-link fs-5 fw-bold px-5 text-light text-center" href="pages/choose-login.html">
+                                <i class="fa-solid fa-right-to-bracket"></i> Entrar
+                            </a>
                         </li>
                         <li class="nav-item mx-4 cor_primaria rounded-3 d-flex justify-content-center align-items-center" onmouseover="this.style.backgroundColor='rgb(139, 0, 0)'"
-                        onmouseout="this.style.backgroundColor=''">
-                            <a class="nav-link fs-5 fw-bold px-5 text-light text-center"
-                                href="pages/choose-register.html">Cadastrar</a>
+                            onmouseout="this.style.backgroundColor=''">
+                            <a class="nav-link fs-5 fw-bold px-5 text-light text-center" href="pages/choose-register.html">
+                                <i class="fa-solid fa-user-plus"></i> Cadastrar
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -225,8 +229,20 @@
             <p class="fs-3 mb-4 text-center">
                 Clique no botão abaixo e preencha o formulário para entendermos melhor a sua questão:
             </p>
-            <a href="suporte.html" class="text-black cor_primaria btn btn-lg mx-auto d-block px-5 fw-bold border-dark border-2"
-                role="button">Falar com o Suporte</a>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+                        <form id="formSuporte" class="text-black fw-bold">
+                            <div class="row g-2 flex-nowrap">
+                                <div class="col">
+                                    <input type="email" id="inputEmail" class="form-control" placeholder="Digite seu email" required>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn-sm btn-primary" role="button">Entrar em contato</button>
+                        </form>
+                    </div>
+                </div>
+            </div>            
         </div>
     </section>
     <footer class="bg-light text-center text-lg-start">
@@ -236,4 +252,11 @@
     </footer>
 </body>
 <script src="./js/session.js"></script>
+<script>
+    document.getElementById('formSuporte').onsubmit = function(event) {
+        event.preventDefault(); // Impede o envio real do formulário
+        var email = document.getElementById('inputEmail').value;
+        console.log(email); // Exibe o email no console
+    };
+</script>
 </html>
