@@ -1,721 +1,262 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
-  <link href="assets/images/favicon.png" rel="icon">
-  <title>Trabalho Interdisciplinar - Documentação</title>
-  <meta name="description" content="Documentação do projeto da disciplina de Trabalho Interdisciplinar">
-  <meta name="author" content="Rommel Carneiro (WebTech)">
-
-  <!-- Stylesheet ========================= -->
-  <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css">
-  <link rel="stylesheet" type="text/css" href="assets/vendor/magnific-popup/magnific-popup.min.css">
-  <link rel="stylesheet" type="text/css" href="assets/vendor/highlight.js/styles/github.css">
-  <!-- Custom Stylesheet -->
-  <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css">
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" type="image/png" href="img/logo_white.png">
+    <title>Academy Map - Encontre sua academia ideal!</title>
 </head>
 
-<body data-spy="scroll" data-target=".idocs-navigation" data-offset="125">
-  <!-- Preloader -->
-  <div class="preloader">
-    <div class="lds-ellipsis">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-  </div>
-
-  <!-- Document Wrapper  =============================== -->
-  <div id="main-wrapper">
-
-    <!-- Header  ============================ -->
-    <header id="header" class="sticky-top">
-      <!-- Navbar -->
-      <nav class="primary-menu navbar navbar-expand-lg navbar-dropdown-dark">
-        <div class="container-fluid">
-          <!-- Sidebar Toggler -->
-          <button type="button" id="sidebarCollapse" class="navbar-toggler d-block d-md-none"><span></span><span
-              class="w-75"></span><span class="w-50"></span></button>
-
-          <!-- Logo -->
-          <a class="logo ml-md-3" href="index.html" title="iDocs Template"> <img src="assets/images/logo.png"
-              alt="iDocs Template"> </a>
-          <span class="text-2 ml-2">v2.0</span>
-          <!-- Logo End -->
-        </div>
-      </nav>
+<body class="bg-black">
+    <header>
+        <nav class="navbar navbar-expand-lg cor_primaria border-bottom border-dark  fixed-top">
+            <div class="container-fluid bg-black p-2">
+                <a class="navbar-brand fw-bold text-light" href="#home">
+                    <img src="img/logo_white.png" alt="Logo" width="100" height="80"
+                        class="d-inline-block align-text-center">
+                    Academy Map
+                </a>
+                <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-lg-auto text-center w-lg-100">
+                        <li class="nav-item mx-4 d-flex justify-content-center align-items-center">
+                            <a class="nav-link fs-5 fw-bold text-light text-center" aria-current="page"
+                                href="#funcionamento">Como funciona</a>
+                        </li>
+                        <li class="nav-item mx-4 d-flex justify-content-center align-items-center">
+                            <a class="nav-link fs-5 fw-bold text-light text-center" href="#sobre">Quem somos</a>
+                        </li>
+                        <li class="nav-item mx-4 d-flex justify-content-center align-items-center">
+                            <a class="nav-link fs-5 fw-bold text-light text-center" href="#suporte">Suporte</a>
+                        </li>
+                        <li class="nav-item mx-4 bg-success rounded-3 d-flex justify-content-center align-items-center">
+                            <a class="nav-link fs-5 fw-bold px-5 text-light text-center" href="pages/choose-login.html">
+                                <i class="fa-solid fa-right-to-bracket"></i> Entrar
+                            </a>
+                        </li>
+                        <li class="nav-item mx-4 cor_primaria rounded-3 d-flex justify-content-center align-items-center" onmouseover="this.style.backgroundColor='rgb(139, 0, 0)'"
+                            onmouseout="this.style.backgroundColor=''">
+                            <a class="nav-link fs-5 fw-bold px-5 text-light text-center" href="pages/choose-register.html">
+                                <i class="fa-solid fa-user-plus"></i> Cadastrar
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-    <!-- Header End -->
-
-    <!-- Content ============================ -->
-    <main id="content">
-
-      <!-- Sidebar Navigation	============================ -->
-      <div class="idocs-navigation bg-light">
-        <ul class="nav flex-column ">
-          <li class="nav-item"><a class="nav-link active" href="#ti_intro">Introdução</a> </li>
-          <li class="nav-item"><a class="nav-link" href="#ti_contexto">Contexto</a></li>
-          <li class="nav-item"><a class="nav-link" href="#ti_concepcao">Concepção</a>
-            <ul class="nav flex-column">
-              <li class="nav-item"><a class="nav-link" href="#ti_processo_dt">Design Thinking</a></li>
-              <li class="nav-item"><a class="nav-link" href="#ti_especificacoes">Especificações</a></li>
-              <li class="nav-item"><a class="nav-link" href="#ti_projeto_interfaces">Projeto de Interfaces</a></li>
-            </ul>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="#ti_metodologia">Metodologia</a>
-            <ul class="nav flex-column">
-              <li class="nav-item"><a class="nav-link" href="#ti_ferramentas">Ferramentas</a></li>
-              <li class="nav-item"><a class="nav-link" href="#ti_gestao_projeto">Gestao do Projeto</a></li>
-              <li class="nav-item"><a class="nav-link" href="#ti_controle_versao">Controle de Versão</a></li>
-            </ul>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="#ti_solucao">Solução</a>
-            <ul class="nav flex-column">
-              <li class="nav-item"><a class="nav-link" href="#ti_video">Vídeo do Projeto</a></li>
-              <li class="nav-item"><a class="nav-link" href="#ti_funcionalidades">Funcionalidades</a></li>
-              <li class="nav-item"><a class="nav-link" href="#ti_estruturas_dados">Estruturas de Dados</a></li>
-              <li class="nav-item"><a class="nav-link" href="#ti_modulos_apis">Módulos e APIs</a></li>
-            </ul>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="#ti_faq">FAQ</a></li>
-          <li class="nav-item"><a class="nav-link" href="#ti_referencias">Referências</a></li>
-        </ul>
-      </div>
-
-      <!-- Docs Content ============================ -->
-      <div class="idocs-content">
-        <div class="container">
-
-          <!-- Introdução ============================ -->
-          <section id="ti_intro">
-            <h2>Introdução</h2>
-            <p class="lead">Informações básicas do projeto como nome e membros da equipe.</p>
-
-            <section id="ti_intro_info">
-              <h4>Informações Gerais</h4>
-              <div class="row">
-                <div class="col-12">
-                  <ul class="list-unstyled">
-                    <li><strong>Projeto:</strong>Academy Map</li>
-                    <li><strong>Repositório GitHub:</strong> <a href="https://github.com/ICEI-PUC-Minas-PPLCC-TI/ti-1-ppl-cc-m-20241-2-g3-mapeamento-academia">G3 - Mapeamento Academia</a>
-                    </li>
-                    <li><strong>Membros da equipe:</strong>
-                      <ul>
-                        <li><a href="https://github.com/alvexx45">Bernardo Bicalho</a></li>
-                        <li><a href="https://github.com/MatheusSCxr">Matheus Silva</a></li>
-                        <li><a href="https://github.com/LucasFernandesMarinho">Lucas Fernandes</a></li>
-                        <li><a href="https://github.com/ErickHlima">Erick Lima</a></li>
-                        <li><a href="https://github.com/GabrieldTostes">Gabriel Dias</a></li>
-                        <li><a href="https://github.com/LeonardoKaue536">Leonardo Kauê</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </section>
-
-          </section>
-          <hr class="divider">
-
-          <!-- Contexto ============================ -->
-          <section id="ti_contexto">
-            <h2>Contexto</h2>
-            <p class="lead">Detalhes sobre o espaço de problema, justificativas e os objetivos do projeto.</p>
-            <section>
-              <h5>Problema
-              <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapseProblema">Info</button></h5>
-              <div class="alert alert-warning collapse" role="alert" id="collapseProblema">
-                Nesse momento você deve apresentar o problema que a sua aplicação deve resolver. No entanto, não é a hora de comentar sobre a aplicação. Descreva também o contexto em que essa aplicação será usada, se houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
-              </div>
-              <p>Percebemos que, encontrar uma academia que atenda às necessidades específicas (sejam elas: localização, qualidade dos equipamentos, atenção dos funcionários, higiene) de cada indivíduo pode ser um desafio devido à falta de informações centralizadas e facilmente acessíveis sobre as opções disponíveis.</p>
-            </section>
-
-            <section>
-              <h5>Objetivos
-              <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapseObjetivos">Info</button></h5>
-              <div class="alert alert-warning collapse" role="alert" id="collapseObjetivos">
-                Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
-              </div>
-              <p>O objetivo geral do projeto é o desenvolvimento de um software que mapeia, avalia e favorita as academias pelo Brasil, além de facilitar o processo de cadastro e pagamento, melhorando a conexão entre os alunos e os ambientes voltados para a prática de atividades físicas.</p>
-            </section>
-
-            <section>
-              <h5>Justificativa
-              <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapseJustificativa">Info</button></h5>
-              <div class="alert alert-warning collapse" role="alert" id="collapseJustificativa">
-                Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software. O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-              </div>
-              <p>De acordo com alguns relatos (histórias de usuário), percebemos que encontrar uma academia que atenda às necessidades específicas de cada indivíduo pode ser um desafio devido à falta de informações centralizadas e facilmente acessíveis sobre as opções disponíveis. Este problema se torna ainda mais evidente para pessoas que viajam e não conhecem a região, resultando em dificuldades adicionais na busca por academias que correspondam às suas expectativas e preferências.</p>
-            </section>
-
-            <section>
-              <h5>Público-alvo
-              <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapsePublico">Info</button></h5>
-              <div class="alert alert-warning collapse" role="alert" id="collapsePublico">
-                Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
-                Adicione informações sobre o público-alvo por meio de uma descrição textual, ou diagramas de personas, mapa de stakeholders, ou como o grupo achar mais conveniente.
-              </div>
-              <p>A Academy Map tem um público bastante abrangente, ou seja, todos que quiserem achar uma academia podem utilizar nosso software, mas ao mesmo tempo temos um nicho bastante específico, aqueles que estão viajando tanto a trabalho quando a lazer e que não conhecem nenhuma academia no lugar onde estão que possua os pontos específicos de seu agrado. 
-                Um exemplo é Bruno, um neurocirurgião de 45 anos que é bastante comprometido com seu trabalho, objetivos e sonhos de vida. Como já possui grande experiência no que faz, Bruno frequentemente participa de congressos, onde palestra sobre seu trabalho. No entanto estes eventos nunca são nos mesmos lugares então não consegue encontrar academias de seu agrado, além de não poder gastar muito tempo com processos como cadastro e pagamento que geralmente demoram pouco mais de 10 minutos.</p>
-            </section>
-
-          </section>
-          <hr class="divider">
-
-          <!-- Concepção ============================ -->
-          <section id="ti_concepcao">
-            <h2>Concepção (Design Thinking)</h2>
-            <p class="lead">Detalhes do processo de discovery do projeto.
-            <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapseConcepcao">Info</button></p>
-            <div class="alert alert-warning collapse" role="alert" id="collapseConcepcao">
-              <p>Apresente o processo de discovery do projeto. Com foco na experiência do usuário, esse processo abrange a compreensão do contexto do problema e das características do usuário, a definição do problema, a geração de ideias, a prototipagem e a elaboração de uma proposta de solução</p>
-            </div>
-
-            <section id="ti_processo_dt">
-              <h4>Processo de Design Thinking</h4>
-              <p>O arquivo que se segue apresenta o resultado desse processo.
-                <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapseProcesso">Info</button>
-              </p>
-              <div class="alert alert-warning collapse" role="alert" id="collapseProcesso">
-                <p>Apresente o processo de Design Thinking realizado pelo grupo e documentado por meio do software Miro. No documento apresentado, devem ser incluídos: (1) a matriz CSD, (2) o mapa de stakeholders, (3) as personas, (4) as respectivas propostas de valor e (5) o processo de ideação identificando as ideias levantadas e sua priorização.</p>
-              </div>
-              <object data="assets/files/PPLCC-M-2 - G3 - Mapeamento Academia.pdf" type="application/pdf" width="100%" height="500px">
-                <p>Não foi possível apresentar o arquivo PDF. Faça o download e abra no seu computador: <a href="/assets/files/PPLCC-M-2 - G3 - Mapeamento Academia.pdf">Download</a></p>
-              </object>
-            </section>
-
-            <section id="ti_especificacoes">
-              <h4>Especificações do Projeto</h4>
-              <p>Documentação das especificações do projeto.
-                <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapseEspecificacao">Info</button>
-              </p>
-              <div class="alert alert-warning collapse" role="alert" id="collapseEspecificacao">
-                <p>Apresente as especificações do projeto, incluindo as histórias de usuário e os requisitos funcionais e não funcionais.</p>
-              </div>
-
-              <section>
-                <h5>Histórias de Usuários</h5>
-                <p>Com base na análise das personas foram identificadas as seguintes histórias de usuários:
-                  <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapseHistorias">Info</button>
-                </p>
-                <div class="alert alert-warning collapse" role="alert" id="collapseHistorias">
-                  <p>Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.</p>
-                </div>
-                <table class="table">
-                  <thead>
-                      <tr>
-                          <th scope="col">EU COMO...<code>PERSONA</code></th>
-                          <th scope="col">QUERO/PRECISO...<code>FUNCIONALIDADE</code></th>
-                          <th scope="col">PARA...<code>MOTIVO/VALOR</code></th>
-                      </tr>
-                  </thead>
-                  <tbody>
-                      <tr>
-                          <th scope="row">Usuário do sistema</th>
-                          <td>Registrar minhas tarefas<span class="exemplo">EXEMPLO</span></td>
-                          <td>Não esquecer de fazê-las</td>
-                      </tr>
-                      <tr>
-                          <th scope="row">Administrador</th>
-                          <td>Alterar permissões<span class="exemplo">EXEMPLO</span></td>
-                          <td>Permitir que possam administrar contas</td>
-                      </tr>
-                  </tbody>
-                </table>
-              </section>
-
-              <section>
-                <h5>Requisitos</h5>
-                <p>As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
-                  <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapseRequisitos">Info</button>
-                </p>
-                <div class="alert alert-warning collapse" role="alert" id="collapseRequisitos">
-                  <p>Com base nas Histórias de Usuário, enumere os requisitos da sua
-                    solução. Classifique esses requisitos em dois grupos:</p>
-                  <ul>
-                    <li><a href="https://pt.wikipedia.org/wiki/Requisito_funcional">Requisitos Funcionais (RF)</a>:
-                      correspondem a uma funcionalidade que deve estar presente na plataforma (ex: cadastro de usuário).</li>
-                    <li><a href="https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional">Requisitos Não Funcionais (RNF)</a>: correspondem a uma característica técnica, seja de usabilidade, desempenho, confiabilidade, segurança ou outro (ex: suporte a dispositivos iOS e Android).</li>
-                  </ul>
-
-                  <p>Lembre-se que cada requisito deve corresponder à uma e somente uma característica alvo da sua solução. Além disso, certifique-se de que todos os aspectos capturados nas Histórias de Usuário foram cobertos.</p>
-                </div>
-
-                <p><strong>Requisitos Funcionais</strong></p>
-                <table class="table">
-                  <thead>
-                      <tr>
-                          <th scope="col">ID</th>
-                          <th scope="col">Descrição do Requisito</th>
-                          <th scope="col">Prioridade</th>
-                      </tr>
-                  </thead>
-                  <tbody>
-                      <tr>
-                          <th scope="row">RF-001</th>
-                          <td>Permitir que o usuário cadastre tarefas<span class="exemplo">EXEMPLO</span></td>
-                          <td>ALTA</td>
-                      </tr>
-                      <tr>
-                          <th scope="row">RF-002</th>
-                          <td>Emitir um relatório de tarefas no mês<span class="exemplo">EXEMPLO</span></td>
-                          <td>MÉDIA</td>
-                      </tr>
-                  </tbody>
-                </table>
-
-                <p><strong>Requisitos Não-Funcionais</strong></p>
-                <table class="table">
-                  <thead>
-                      <tr>
-                          <th scope="col">ID</th>
-                          <th scope="col">Descrição do Requisito</th>
-                          <th scope="col">Prioridade</th>
-                      </tr>
-                  </thead>
-                  <tbody>
-                      <tr>
-                          <th scope="row">RNF-001</th>
-                          <td>O sistema deve ser responsivo para rodar em um dispositivos móvel<span class="exemplo">EXEMPLO</span></td>
-                          <td>MÉDIA</td>
-                      </tr>
-                      <tr>
-                          <th scope="row">RNF-002</th>
-                          <td>Deve processar requisições do usuário em no máximo 3s<span class="exemplo">EXEMPLO</span></td>
-                          <td>BAIXA</td>
-                      </tr>
-                  </tbody>
-                </table>
-              </section>
-            </section>
-
-            <section id="ti_projeto_interfaces">
-              <h4>Projeto de Interface</h4>
-              <p>Artefatos relacionados com a interface e a interacão do usuário na proposta de solução.
-                <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapseInterface">Info</button>
-              </p>
-              <div class="alert alert-warning collapse" role="alert" id="collapseInterface">
-                <p>Apresente a ideia de interface que está sendo prevista para o projeto. Inclua os wireframes, o user/screen flow e o protótipo interativo.</p>
-              </div>
-
-              <section>
-                <h5>User/Screen Flow e Protótipo interativo</h5>
-                <p>Artefatos relacionados com a interface e a interacão do usuário na solução proposta.
-                  <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapseUserFlow">Info</button>
-                </p>
-                <div class="alert alert-warning collapse" role="alert" id="collapseUserFlow">
-                  <p>O fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe. <img  class="img-fluid" src="assets/images/exemplo-userflow.png" alt="Exemplo de fluxo de usuário">
-                  </p>
-                  <p>Um protótipo interativo apresenta o projeto de interfaces e permite ao usuário navegar pelas funcionalidades como se estivesse lidando com o software pronto. Veja o exemplo a seguir.<br>
-                    <iframe title="Protótipo interativo" src="https://marvelapp.com/prototype/4hd6091?emb=1&iosapp=false&frameless=false" width="600px" height="360px" allowtransparency="true" frameborder="0"></iframe>
-                  </p>
-                </div>
-                <p><img src="../docs/assets/images/Captura de tela 2024-07-03 141206.png" alt="" width="1000"></p>
-              </section>
-
-              <section>
-                <h5>Wireframes</h5>
-                <p>Protótipo de telas do sistema em baixa fidelidade (rascunhos).
-                  <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapseWireframes">Info</button>
-                </p>
-                <div class="alert alert-warning collapse" role="alert" id="collapseWireframes">
-                  <p>Os Wireframes são protótipos das telas da aplicação usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante ao layout de elementos fundamentais na interface. <img  class="img-fluid" src="assets/images/exemplo-wireframe.png" alt="Exemplo de wireframe"></p>
-                </div>
-                <p>......  COLOQUE AQUI OS PROTÓTIPO DE TELAS E SUA DESCRIÇÃO ......</p>
-              </section>
-
-            </section>
-          </section>
-
-          <hr class="divider">
-
-          <!-- Metodologia ============================ -->
-          <section id="ti_metodologia">
-            <h2>Metodologia</h2>
-            <p class="lead">Detalhes sobre a organização do grupo e o ferramental empregado.
-              <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapseMetodologia">Info</button>
+    <section id="home" class="pt-5 mt-5 pb-5 mt-5">
+        <div class="secao container bg-white rounded-3 mb-5 px-5 pb-5 border border-5 bordas_primaria">
+            <h1 class="p-5 text-center">Bem-vindo à Academy Map</h1>
+            <p class="fs-4 mb-5">Para você, entusiasta do fitness, que busca a academia perfeita para elevar seu treino
+                ao próximo nível, ou para você, proprietário de academia, que deseja expandir seu alcance e conectar-se
+                com
+                mais clientes, a Academy Map é o seu destino final.</p>
+            <p class="fs-4 mb-5">Se você é um entusiasta do fitness em busca da academia perfeita ou um proprietário de
+                academia querendo
+                expandir seu alcance, a Academy Map é o seu destino. Usuários, encontrem academias alinhadas com seus
+                objetivos e preferências e juntem-se a uma comunidade que apoia sua jornada de bem-estar. Proprietários,
+                aumentem a visibilidade da sua academia e atraiam o público certo com facilidade.</p>
+            <p class="fs-3 mb-5 text-center">
+                Não tem uma conta ainda? Clique no botão abaixo e faça o seu cadastro em pouco minutos!
             </p>
-            <div class="alert alert-warning collapse" role="alert"  id="collapseMetodologia">
-              <p>Nesta parte do documento, você deve apresentar a metodologia adotada pelo grupo, descrevendo o processo de trabalho baseado nas metodologias ágeis, a divisão de papéis e tarefas, as ferramentas empregadas e como foi realizada agestão de configuração do projeto via GitHub.</p>
-              <p>Coloque detalhes sobre o processo de Design Thinking e a implementação do Framework Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.</p>
+            <div class="text-center mb-5">
+                <img src="img/logo_black.png" alt="ilustrativa2" class="img-fluid">
+                <a href="pages/choose-register.html"
+                    class="text-white btn btn-lg cor_primaria mx-5 mt-4 p-4 fs-1 fw-bolder border-dark border-3 mb-5"
+                    role="button" onmouseover="this.style.backgroundColor='rgb(139, 0, 0)'"
+                    onmouseout="this.style.backgroundColor=''">Cadastre-se já!</a>
             </div>
-
-            <section>
-              <h4 id="ti_ferramentas">Ferramentas</h4>
-              <p>Relação de ferramentas empregadas pelo grupo durante o projeto.
-                <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapseFerramentas">Info</button>
-              </p>
-              <div class="alert alert-warning collapse" role="alert" id="collapseFerramentas">
-                <p>Liste as ferramentas empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível. Inclua itens como: (1) Editor de código, ferramentas de comunicação, ferramentas de diagramação, plataformas de hospedagem, entre outras.</p>
-              </div>
-              <table class="table">
-                <thead>
-                    <tr>
-                        <th scope="col">Ambiente</th>
-                        <th scope="col">Plataforma</th>
-                        <th scope="col">Link de Acesso</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Processo de Design Thinking</td>
-                        <td>Miro</td>
-                        <td><a href="https://miro.com/app/board/uXjVKdJngSA=/">https://miro.com/app/board/uXjVKdJngSA=/</a></td>
-                    </tr>
-                    <tr>
-                        <td>Repositório de código</td>
-                        <td>GitHub</td>
-                        <td><a href="https://github.com/ICEI-PUC-Minas-PPLCC-TI/ti-1-ppl-cc-m-20241-2-g3-mapeamento-academia">https://github.com/ICEI-PUC-Minas-PPLCC-TI/ti-1-ppl-cc-m-20241-2-g3-mapeamento-academia</a></td>
-                    </tr>
-                    <tr>
-                        <td>Hospedagem do site</td>
-                        <td>Heroku</td>
-                        <td><a href="https://XXXXXXX.herokuapp.com">https://XXXXXXX.herokuapp.com</a><span class="exemplo">EXEMPLO</span></td>
-                    </tr>
-                    <tr>
-                        <td>Protótipo Interativo</td>
-                        <td>MavelApp ou Figma</td>
-                        <td><a href="https://www.figma.com/design/ZusyCkHhBF5FDdPr5wbqld/Untitled?node-id=0-1">https://www.figma.com/design/ZusyCkHhBF5FDdPr5wbqld/Untitled?node-id=0-1</a></td>
-                    </tr>
-                </tbody>
-              </table>
-            </section>
-
-            <section id="ti_gestao_projeto">
-              <h4>Gestão do Projeto</h4>
-              <p>Divisão de papéis no grupo e apresentação da estrutura da ferramenta de controle de tarefas (Kanban).
-                <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapsePapeis">Info</button>
-              </p>
-              <div class="alert alert-warning collapse" role="alert" id="collapsePapeis">
-                <p>Apresente a divisão de papéis e tarefas entre os membros do grupo. Informe quem é o Scrum Master, o Product Owner e os desenvolvedores. Informe também quem é o responsável pela documentação do projeto.</p>
-                <p>Apresente o quadro de gerenciamento do time (Kanban), seu formato e as experiências na utilização dessa ferramenta (GitHub Projects) </p>
-              </div>
-              <p>Bernardo Alves - Product Owner <br> Matheus Silva - Scrum Master <br> Gabriel Tostes - Responsável pela documentação <br> Lucas Marinho - Desenvolvedor <br> Leonardo Kauê - Desenvolvedor <br> Erik Lima - Desenvolvedor</p>
-            </section>
-
-
-            <section id="ti_controle_versao">
-              <h4>Controle de Versão</h4>
-              <p>Estrutura do fluxo de trabalho no ambiente do GitHub.
-              <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapseVersao">Info</button>
-              </p>
-              <div class="alert alert-warning collapse" role="alert" id="collapseVersao">
-                <p>Discuta como a configuração do projeto foi feita na ferramenta de versionamento (GitHub). Exponha como a gerência de tags, merges, commits e branchs é realizada. Discuta como a gerência de issues foi realizada.<br>
-                  <img class="img-fluid" src="assets/images/exemplo-workflow.png" alt="">
-                </p>
-              </div>
-              <p>......  COLOQUE AQUI O SEU TEXTO ......</p>
-            </section>
-          </section>
-          <hr class="divider">
-
-          <!-- Funcionalidades ==================== -->
-          <section id="ti_solucao">
-            <h2>Solução</h2>
-            <p class="lead">Esta seção apresenta todos os detalhes da solução criada no projeto.
-              <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapseSolucao">Info</button>
+            <p class="fs-3 mb-5 text-center">
+                Já possui um cadastro? Clique no botão de Login para continuar explorando e aproveitando os
+                recusrsos da Academy Map!
             </p>
-            <div class="alert alert-warning collapse" role="alert" id="collapseSolucao">
-              <p>Apresente cada uma das funcionalidades que a aplicação fornece tanto para os usuários quanto aos administradores da solução.</p>
-              <p>Inclua, para cada funcionalidade, itens como: (1) titulos e descrição da funcionalidade; (2) Estrutura de dados associada; (3) o detalhe sobre as instruções de acesso e uso.</p>
+            <div class="text-center d-flex">
+                <a href="pages/choose-login.html"
+                    class="btn btn-lg btn-success mx-auto p-4 fs-1 fw-bolder border-dark border-3 mb-5 px-5"
+                    role="button">Entrar</a>
             </div>
-
-            <section id="ti_video">
-              <h4>Video do Projeto</h4>
-              <p>O vídeo a seguir traz uma apresentação do problema que a equipe está tratando e a proposta de solução.
-                <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapseVideo">Info</button>
-              </p>
-              <div class="alert alert-warning collapse" role="alert" id="collapseVideo">
-                <p>O video de apresentação é voltado para que o público externo possa conhecer a solução. O formato é livre, sendo importante que seja apresentado o problema e a solução numa linguagem descomplicada e direta.</p>
-                <p>Utilize o recurso de compartilhamento via embed e inclua o vídeo logo abaixo.</p>
-              </div>
-              <p><iframe width="560" height="315" src="https://www.youtube.com/embed/9Zg048TlPtk?si=Ukt4TZ37bb-X9Wej" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
-            </section>
-
-            <section id="ti_funcionalidades">
-              <h4>Funcionalidades</h4>
-              <p>Esta seção apresenta as funcionalidades da solução.
-              <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapseFuncionalidades">Info</button>
-              </p>
-              <div class="alert alert-warning collapse" role="alert" id="collapseFuncionalidades">
-                <p>Apresente cada uma das funcionalidades que a aplicação fornece tanto para os usuários quanto aos administradores da solução.</p>
-                <p>Inclua, para cada funcionalidade, itens como: (1) titulos e descrição da funcionalidade; (2) Estrutura de dados associada; (3) o detalhe sobre as instruções de acesso e uso.</p>
-              </div>
-
-              <section>
-                <h5>Funcionalidade 1 - Cadastro de Usuário</h5>
-                <p>Permite a inclusão de um usuário</p>
-                <ul class="list-unstyled">
-                  <li><strong>Estrutura de dados: </strong><a href="#">Usuário</a></li>
-                  <li><strong>Instruções de acesso: </strong><ul>
-                    <li>Abra o site e preencha os campos com seus dados</li>
-                    <li>Finalize o cadastro apertando no botão</li>
-                  </ul></li>
-                </ul>
-                <p class="text-center"><img class="img-fluid" src="../docs/assets/images/cadastrousuario.png" alt="Tela Cadastro de Contatos"></p>
-              </section>
-
-              <h5>Funcionalidade 2 - Cadastro de Academias</h5>
-              <p>Permite a inclusão de uma academia</p>
-              <ul class="list-unstyled">
-                <li><strong>Estrutura de dados: </strong><a href="#">Academias</a></li>
-                <li><strong>Instruções de acesso:</strong><ul>
-                  <li>Abra o site e preencha os campos com todos os dados da sua academia</li>
-                  <li>Finalize o cadastro apertando no botão</li>
-                </ul></li>
-              </ul>
-              <p class="text-center"><img class="img-fluid" src="../docs/assets/images/cadastroacademia.png" alt="Tela Cadastro de Contatos"></p>
-            </section>
-
-            <h5>Funcionalidade 3 - Favoritos</h5>
-            <p>Permite que o usuário coloque academias na sua página de favoritos</p>
-            <ul class="list-unstyled">
-              <li><strong>Estrutura de dados:</strong><a href="#">Favoritos</a></li>
-              <li><strong>Instruções de acesso: </strong><ul>
-                <li>Com o site aberto, abra a página da academia da sua preferência</li>
-                <li>Aperte em "Adicionar aos favoritos"</li>
-                <li>Em seguida, vá para sua página de favoritos</li>
-              </ul></li>
-            </ul>
-            <p class="text-center"><img class="img-fluid" src="../docs/assets/images/favoritos.png" alt="Tela Cadastro de Contatos"></p>
-          </section>
-
-          <h5>Funcionalidade 4 - Busca de Academias com mapa</h5>
-          <p>Permite a inclusão, leitura, alteração e exclusão de contatos para o sistema</p>
-          <ul class="list-unstyled">
-            <li><strong>Estrutura de dados: </strong><a href="#">Academias</a></li>
-            <li><strong>Instruções de acesso: </strong><ul>
-              <li>Com o site aberto, vá para a página de busca de academias</li>
-              <li>Em seguida, procure a academia da sua preferência</li>
-            </ul></li>
-          </ul>
-          <p class="text-center"><img class="img-fluid" src="../docs/assets/images/mapa.png" alt="Tela Cadastro de Contatos"></p>
-        </section>
-            </section>
-
-            <!-- Estruturas de dados =============== -->
-            <section id="ti_estruturas_dados">
-              <h4>Estruturas de Dados</h4>
-              <p>Descrição das estruturas de dados utilizadas na solução com exemplos no formato JSON.
-                <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapseEstruturas">Info</button>
-              </p>
-              <div class="alert alert-warning collapse" role="alert" id="collapseEstruturas">
-                <p>Apresente as estruturas de dados utilizadas na solução tanto para dados utilizados na essência da aplicação quanto outras estruturas que foram criadas para algum tipo de configuração</p>
-                <p>Nomeie a estrutura, coloque uma descrição sucinta e apresente um exemplo em formato JSON.</p>
-              </div>
-
-              <section>
-                <h5>Estrutura de Dados - Usuário</h5>
-                <p>Registro dos usuários do sistema utilizados para login e para o perfil do sistema</p>
-                <pre>
-                  {
-                    "id": "f52d",
-                    "name": "alice",
-                    "cpf": "456234456",
-                    "email": "a@gmail.com",
-                    "password": "123"
-                  }
-                </pre>
-              </section>
-
-              <section>
-                <h5>Estrutura de Dados - Academias</h5>
-                <p>Registro das academias do sistema utilizados para login e para o perfil do sistema</p>
-                <pre>
-                  {
-                    "login": "smartfit00",
-                    "id": "b080",
-                    "name": "SmartFit",
-                    "location": "Salvador - BA",
-                    "address": "Rua Waldemar Falcão, 323, Salvador",
-                    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
-                    "password": "sf"
-                  }
-                </pre>
-              </section>
-
-              <section>
-                <h5>Estrutura de Dados - Favoritos</h5>
-                <p>Registro dos favoritos</p>
-                <pre>
-                  {
-                    "id": "5a66",
-                    "userId": "4445",
-                    "academyId": "4955"
-                  }
-                </pre>
-              </section>
-
-              <section>
-                <h5>Estrutura de Dados - Reviews</h5>
-                <p>Registro das reviews dadas pelos usuários</p>
-                <pre>
-                  {
-                    "id": "607b",
-                    "userId": 1,
-                    "academyId": "b080",
-                    "rating": 5,
-                    "comment": "boa"
-                  }
-                </pre>
-              </section>
-            </section>
-
-            <!-- Módulos e APIs ================= -->
-            <section id="ti_modulos_apis">
-              <h4>Módulos e APIs</h4>
-              <p>Esta seção apresenta os módulos e APIs utilizados na solução.
-                <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapseModulos">Info</button>
-              </p>
-              <div class="alert alert-warning collapse" role="alert" id="collapseModulos">
-                <p>Apresente os módulos e APIs utilizados no desenvolvimento da solução. Inclua itens como: (1) Frameworks, bibliotecas, módulos, etc. utilizados no desenvolvimento da solução; (2) APIs utilizadas para acesso a dados, serviços, etc.</p>
-              </div>
-
-              <section>
-                <h5>Images:</h5>
-                <ul>
-                  <li>Unsplash - <a target="_blank" href="https://unsplash.com/">https://unsplash.com/</a><span class="exemplo">EXEMPLO</span></li>
-                </ul>
-              </section>
-
-              <section>
-                <h5>Fonts:</h5>
-                <ul>
-                  <li>Icons Font Face - <a target="_blank" href="https://fontawesome.com/">https://fontawesome.com/</a><span class="exemplo">EXEMPLO</span></li>
-                </ul>
-              </section>
-
-              <section>
-                <h5>Scripts:</h5>
-                <ul>
-                  <li>jQuery - <a target="_blank" href="http://www.jquery.com/">http://www.jquery.com/</a><span class="exemplo">EXEMPLO</span></li>
-                  <li>Bootstrap 4 - <a target="_blank" href="http://getbootstrap.com/">http://getbootstrap.com/</a><span class="exemplo">EXEMPLO</span></li>
-                </ul>
-              </section>
-            </section>
-
-          </section>
-          <hr class="divider">
-
-          <!-- FAQ ============================ -->
-          <section id="ti_faq">
-            <h2>FAQ</h2>
-            <p class="lead">Perguntas e respostas comuns associadas ao projeto.
-              <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapseFAQ">Info</button>
-            </p>
-            <div class="alert alert-warning collapse" role="alert" id="collapseFAQ">
-              <p>Apresente uma lista de perguntas e respostas comuns associadas ao projeto. Inclua perguntas como: (1) detalhes de acesso e uso do projeto; (2) informações sobre a instalação e configuração da aplicação; (3) questões sobre a manutenção da aplicação; (4) detalhes sobre a integração da aplicação com outros sistemas; (5) questões sobre a segurança da aplicação.</p>
-            </div>
-
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="accordion accordion-alterate arrow-right" id="popularTopics">
-                  <div class="card">
-                    <div class="card-header" id="heading1">
-                      <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse1"
-                          aria-expanded="false" aria-controls="collapse1">Como esse site pode me ajudar?</a> </h5>
-                    </div>
-                    <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#popularTopics">
-                      <div class="card-body">O nosso site pode ser muito útil para diversas pessoas,porém,sua utilidade fica mais visível para pessoas que não largam a academia nem quando vão viajar.Essas pessoas, pelo nosso site, podem assinar planos pequenos para não ficarem sem treinar em suas viagens.</div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header" id="heading2">
-                      <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse2"
-                          aria-expanded="false" aria-controls="collapse2">Qual o melhor método de pagamento?</a> </h5>
-                    </div>
-                    <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#popularTopics">
-                      <div class="card-body">Todos os métodos de pagamento que oferecemos são muito bons, mas o que recomendamos fortemente o PIX,pois seu dinheiro cai no mesmo instante.</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </section>
-          <hr class="divider">
-
-          <!-- Referências Bibliográficas ================= -->
-          <section id="ti_referencias">
-            <h2>Referências Bibliográficas</h2>
-            <p class="lead">Esta seção apresenta as referências bibliográficas utilizadas no projeto.
-              <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapseReferencias">Info</button></p>
-            <div class="alert alert-warning collapse" role="alert" id="collapseReferencias">
-              <p>Apresente as referências bibliográficas utilizadas no projeto. Inclua itens como: (1) livros, artigos, tutoriais, etc. utilizados no desenvolvimento da solução; (2) links para sites, blogs, etc. utilizados no desenvolvimento da solução.</p>
-            </div>
-            <p>
-              <div id="carouselExampleIndicators" class="carousel slide">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <iframe width="1150" height="650" src="https://www.youtube.com/embed/HGTJBPNC-Gw?si=aTBhRaEAgNAEr3P6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                  </div>
-                  <div class="carousel-item">
-                    <iframe width="1150" height="650" src="https://www.youtube.com/embed/_1kNqAybxW0?si=RIgRhMyXFRNnHJEB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                  </div>
-                  <div class="carousel-item">
-                    <iframe width="1150" height="650" src="https://www.youtube.com/embed/QhQ4m5g2fhA?si=MeRsUWbpqm_H8Lkg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-            </p>
-          </section>
-
         </div>
-      </div>
-    <!-- Content end -->
-    </main>
-
-    <!-- Footer
-  ============================ -->
-    <footer id="footer" class="section bg-dark footer-text-light">
-      <div class="container">
-        <p class="text-center"><strong>Trabalho Interdisciplinar - ICEI PUC Minas</strong><br>Modelo adaptado de <a
-            href="http://www.harnishdesign.net/idocs-one-page-documentation-html-template/">iDocs</a>  - Design &amp; Develop by <a class="btn-link" target="_blank"
-            href="http://www.harnishdesign.net/">HarnishDesign</a></p>
-      </div>
+    </section>
+    <section id="funcionamento" class="px-4">
+        <div
+            class="secao container bg-white rounded-3 mb-5 px-5 pb-5 ms-lg-0 me-lg-auto border border-5 bordas_primaria">
+            <div class="row align-items text-center">
+                <div class="col-lg-8">
+                    <h1 class="p-5 fw-bolder">Como funciona</h1>
+                    <p class="fs-4 mb-5">Descubra a facilidade de encontrar a academia perfeita para suas necessidades
+                        com apenas alguns cliques, tudo isso no seu conforto. Nosso sistema foi criado pensando em você,
+                        oferecendo uma experiência personalizada e eficiente que conecta clientes a academias com
+                        precisão e facilidade. Com base nos dados fornecidos, é possível indicar a academia mais próxima
+                        da sua localização e de acordo com as suas preferências. As academias são cadastradas no nosso
+                        banco de dados, e é com base nele que a plataforma irá trabalhar usando endereço, tipos de
+                        equipamentos fornecidos, horários de pico, preços, qualidade do atendimento e experiências de
+                        outros usuários. Além disso, as academias são beneficiadas
+                        pelo maior alcance de possíveis clientes, que poderão optar por realizar feedbacks através da
+                        Academy Map. Dessa forma, nossa plataforma oferece praticidade e economia de tempo para os
+                        usuários de academias e para as empresas responsáveis pela manutenção delas, uma vez que as
+                        esses estabelecimentos poderão aumentar o alcance do seu público por meio da Academy Map.
+                        <br><br>A seguir, será
+                        mostrado todo o processo de experiência que o usuário terá utilizando a Academy Map:
+                    </p>
+                    <p class="fs-4 mb-5">
+                        <b>Primeiro Passo: Cadastro Simplificado<br></b> Comece sua jornada conosco através de um
+                        cadastro rápido e fácil. Informe-nos sobre suas necessidades e localização para que possamos
+                        criar um perfil personalizado. Este perfil é a chave para acessar uma rede de academias
+                        confiáveis e serviços de qualidade, todos ao seu alcance.
+                    </p>
+                    <p class="fs-4 mb-5">
+                        <b>Segundo Passo: Personalização<br></b>Após o cadastro, você terá a liberdade de ajustar suas
+                        preferências através de uma variedade de filtros. Seja por tipo de serviço, faixa de preço,
+                        avaliações de outros usuários ou qualquer outro critério relevante, nosso sistema utiliza essas
+                        informações para refinar a busca e apresentar as opções mais adequadas.
+                    </p>
+                    <p class="fs-4 mb-5">
+                        <b>Terceiro Passo: Conexão<br></b>Com base em suas preferências e localização, nosso algoritmo
+                        faz o trabalho pesado por você. Ele identifica as academias que melhor se alinham ao seu perfil,
+                        garantindo que as recomendações sejam personalizadas e pertinentes. Assim, você pode escolher
+                        com confiança a academia que melhor se encaixa no que você procura.
+                    </p>
+                    <p class="fs-4 mb-5">
+                        <b>Quarto Passo: Contato Direto e Serviços<br></b>Escolha a academia que capturou sua atenção e
+                        entre em contato diretamente através pela Academy Map. Agende serviços, esclareça dúvidas e
+                        discuta preços, tudo em um só lugar. Nossa missão é facilitar sua vida, proporcionando um
+                        caminho direto para serviços excepcionais.
+                    </p>
+                    <p class="fs-4 mb-5">
+                        <b>Quinto e Último Passo: Avaliação e Feedback<br></b>Após usufruir dos serviços, compartilhe
+                        sua experiência conosco. Suas avaliações e feedback são fundamentais para aprimorarmos
+                        continuamente a qualidade das empresas parceiras e a eficácia da nossa plataforma.
+                    </p>
+                </div>
+                <div class="col-lg-4 m-auto">
+                    <img src="img/ilustrativa_network.png" alt="ilustrativa1" class="img-fluid rounded-2">
+                </div>
+            </div>
+            <p class="fs-4 mb-5 text-center">
+                Na Academy Map, seu conforto e satisfação são nossa prioridade. Junte-se a nós e veja como
+                é fácil encontrar a academia ideal para qualquer serviço que você precise, sempre perto de você e
+                de acordo com suas preferências. Proprietários de academias poderão usufruir do feedback fornecido pelos
+                clientes e encontrar novas formas de expandir o próprio negócio.</p>
+            <p class="text-center">
+                <img src="img/ilustrativa_academia.jpg" alt="ilustrativa1-2" class="img-fluid rounded-2">
+            </p>
+        </div>
+    </section>
+    <section id="sobre" class="px-4">
+        <div
+            class="secao container bg-white rounded-3 mb-5 px-5 pb-5 ms-lg-auto me-lg-0 border border-5 bordas_primaria">
+            <div class="row align-items-center">
+                <div class="col-lg-4 mx-lg-auto">
+                    <img src="img/logo_black.png" alt="logo" class="img-fluid mx-auto d-block">
+                </div>
+                <div class="col-lg-8 text-center">
+                    <h1 class="p-5 fw-bolder">Quem somos</h1>
+                    <p class="fs-4 mb-5">Somos um grupo de estudantes entusiastas do curso de Ciências da Computação da
+                        PUC Minas, e criamos esta plataforma com um objetivo simples: transformar a maneira como você
+                        encontra a academia perfeita.</p>
+                    <p class="fs-4 mb-5">
+                        Nossa jornada inicou quando compartilhamos uma visão comum de simplificar a busca pela academia
+                        ideal, de maneira simples e funcional. Combinando nossa afinidade por tecnologia e um estilo de
+                        vida saudável, desenvolvemos uma ferramenta que não apenas economiza seu tempo, mas também
+                        personaliza sua experiência de acordo com suas preferências, de forma rápida e prática.
+                    </p>
+                    <p class="fs-4 mb-5">
+                        Aqui, você pode encontrar academias com facilidade, filtrar por localização, serviços
+                        oferecidos,
+                        faixa de preço, qualidade do equipamento, avaliações de outros usuários e muito mais. Tudo isso
+                        para garantir que você
+                        encontre o lugar que não só atenda às suas necessidades, mas que também o inspire a alcançar
+                        seus objetivos de saúde e bem-estar. Além disso, com o nosso banco de dados, esse processo se
+                        torna rápido e eficiente, sem informações desnecessárias ou anúncios.
+                    </p>
+                    <p class="fs-4 mb-5">Para os proprietários de academias, a Academy Map representa uma
+                        oportunidade incrível de aumentar a visibilidade e atrair um público mais amplo. Estamos
+                        comprometidos em construir uma comunidade onde cada membro possa se beneficiar: usuários
+                        encontram seu espaço ideal para treinar e academias descobrem clientes de outras regiões.
+                    </p>
+                    <p class="fs-4 mb-5">
+                        Oferecemos visibilidade ampliada para academias e uma busca personalizada para usuários, com
+                        filtros detalhados que economizam tempo e direcionam escolhas. Receba feedback valioso, otimize
+                        recursos de marketing e engaje-se com uma comunidade fitness ativa. Mantenha-se atualizado com
+                        novidades e análises de dados, enquanto expande seu alcance e descobre novas formas de atrair
+                        clientes.
+                    </p>
+                </div>
+            </div>
+            <p class="text-center">
+                <img src="img/ilustrativa_PUC.jpg" width="920" alt="PUC"
+                    class="img-fluid rounded-2 d-block mx-auto mb-5">
+            </p>
+    </section>
+    <section id="suporte" class="px-4">
+        <div class="secao container bg-white rounded-3 mb-5 px-5 pb-5 mx-auto bordas_primaria border border-5">
+            <h1 class="p-5 fw-bolder text-center">Informações de suporte</h1>
+            <img src="img/ilustrativa_info.png" alt="informações" width="100" height="80"
+                class="img-fluid rounded-2 d-block mx-auto mb-5">
+            <p class="fs-4 mb-5">Trabalhamos para resolver quaisquer problemas
+                que você possa encontrar e para melhorar continuamente
+                a plataforma, baseando-nos em seus comentários e sugestões. Entendemos que o feedback construtivo é o
+                alicerce para a melhoria contínua e a excelência do serviço. Se você está enfrentando algum desafio ou
+                tem sugestões que podem nos ajudar a evoluir, nosso suporte está pronto para ouvi-lo.
+            </p>
+            <p class="fs-4 mb-5">
+                Caso tenha alguma dúvida sobre o funcionamento da plataforma, nosso suporte está preparado para fornecer
+                todas as informações que você precisa. Estamos comprometidos em esclarecer suas questões para que você
+                possa aproveitar ao máximo todos os recursos disponíveis, seja um usuário de academia ou proprietário de
+                uma.
+            </p>
+            <p class="fs-4 mb-5">Se você precisar de ajuda para navegar pela nossa plataforma ou entender melhor os seus
+                recursos,
+                nossa equipe de suporte está pronta para atendê-lo. Não hesite em entrar em contato conosco através do
+                formulário que disponibilizamos. Sua satisfação e sucesso na Academy Map são nossas maiores
+                prioridade.
+            </p>
+            <img src="img/ilustrativa_suporte.png" alt="suporte" width="500"
+                class="img-fluid rounded-2 d-block mx-auto mb-5">
+            <p class="fs-3 mb-4 text-center">
+                Clique no botão abaixo e preencha o formulário para entendermos melhor a sua questão:
+            </p>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+                        <form id="formSuporte" class="text-black fw-bold">
+                            <div class="row g-2 flex-nowrap">
+                                <div class="col">
+                                    <input type="email" id="inputEmail" class="form-control" placeholder="Digite seu email" required>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn-sm btn-primary" role="button">Entrar em contato</button>
+                        </form>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </section>
+    <footer class="bg-light text-center text-lg-start">
+        <div class="text-dark text-center p-3 cor_primaria fw-bolder">
+            © 2024 Academy Map - Todos os direitos reservados.
+        </div>
     </footer>
-    <!-- Footer end -->
-
-    <!-- Document Wrapper end -->
-  </div>
-
-  <!-- Back To Top -->
-  <a id="back-to-top" data-toggle="tooltip" title="Topo" href="javascript:void(0)"><i
-        class="fa fa-chevron-up"></i></a>
-
-  <!-- JavaScript ============================ -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <!-- Highlight JS -->
-  <script src="assets/vendor/highlight.js/highlight.min.js"></script>
-  <!-- Easing -->
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <!-- Magnific Popup -->
-  <script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-  <!-- Custom Script -->
-  <script src="assets/js/theme.js"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
-
+<script src="./js/session.js"></script>
+<script>
+    document.getElementById('formSuporte').onsubmit = function(event) {
+        event.preventDefault(); // Impede o envio real do formulário
+        var email = document.getElementById('inputEmail').value;
+        console.log(email); // Exibe o email no console
+    };
+</script>
 </html>
