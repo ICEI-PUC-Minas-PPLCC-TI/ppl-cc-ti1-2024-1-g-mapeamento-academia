@@ -31,11 +31,12 @@ fetch('../partials/header.html')
             toggleVisibility('nav-logout', true);
         } else if (academy) {
             toggleVisibility('nav-start', false);
-            toggleVisibility('nav-search', true);
+            toggleVisibility('nav-search', false);
             toggleVisibility('nav-favorites', false);
             toggleVisibility('nav-dashboard-user', false);
             toggleVisibility('nav-dashboard-academy', true);
             toggleVisibility('nav-logout', true);
+            console.log("teste");
         } else {
             toggleVisibility('nav-start', true);
             toggleVisibility('nav-search', false);
@@ -69,5 +70,3 @@ function logout() {
     checkLogin();
     window.location.href = '../index.html'; // Redireciona o usuário para a página de apresentação (agr deve estar funcionando corretamente)
 }
-
-

@@ -57,6 +57,7 @@ function displayAcademyDetails(academy) {
     document.getElementById('academy-image').src = academy.image;
     document.getElementById('academy-location').textContent = `Localização: ${academy.location}`;
     document.getElementById('academy-address').textContent = `Endereço: ${academy.address}`;
+    document.getElementById('academy-price').textContent = `Preço médio dos planos mensais: R$${academy.price}`;
 }
 
 async function fetchReviews(academyId) {

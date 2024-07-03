@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
       row.innerHTML = `
         <td><a href="academy-details.html?id=${academy.id}">${academy.name}</a></td>
         <td>${academy.location}</td>
-        <td>${academy.rating}</td>
+        <td>${academy.price}</td>
         <td>${distance} km</td>
       `;
       tbody.appendChild(row);
@@ -211,25 +211,33 @@ function filterAcademies() {
     const table = document.querySelector('table');
     const tbody = table.tBodies[0];
     const rows = Array.from(tbody.rows);
-
+  
     // Verifica se a ordenação é ascendente ou descendente
     const isAsc = table.rows[0].cells[columnIndex].classList.toggle('asc');
-
+  
     rows.sort((a, b) => {
-        let cellA = a.cells[columnIndex].textContent;
-        let cellB = b.cells[columnIndex].textContent;
-
-        // Se for a terceira coluna, ordena numericamente
-        if (columnIndex === 2 || columnIndex === 3) {
-            cellA = parseInt(cellA.replace(/\D/g, ''));
-            cellB = parseInt(cellB.replace(/\D/g, ''));
-            return isAsc ? cellA - cellB : cellB - cellA;
-        } else {
-            // Para outras colunas, usa a ordenação original
-            return isAsc ? cellA.localeCompare(cellB) : cellB.localeCompare(cellA);
-        }
+      let cellA = a.cells[columnIndex].textContent.trim();
+      let cellB = b.cells[columnIndex].textContent.trim();
+  
+      // Se for a terceira coluna (preço), ordena como valor float
+      if (columnIndex === 2) {
+        cellA = parseFloat(cellA.replace(/[^0-9,.-]/g, '').replace(',', '.'));
+        cellB = parseFloat(cellB.replace(/[^0-9,.-]/g, '').replace(',', '.'));
+        return isAsc ? cellA - cellB : cellB - cellA;
+      }
+      // Se for a quarta coluna (distância), ordena como valor float
+      else if (columnIndex === 3) {
+        cellA = parseFloat(cellA.replace(/[^0-9,.]/g, ''));
+        cellB = parseFloat(cellB.replace(/[^0-9,.]/g, ''));
+        return isAsc ? cellA - cellB : cellB - cellA;
+      }
+  
+      // Para outras colunas, usa a ordenação de strings
+      else {
+        return isAsc ? cellA.localeCompare(cellB) : cellB.localeCompare(cellA);
+      }
     });
-
+  
     // Reinsere as linhas ordenadas no corpo da tabela
     rows.forEach(row => tbody.appendChild(row));
-}
+  }

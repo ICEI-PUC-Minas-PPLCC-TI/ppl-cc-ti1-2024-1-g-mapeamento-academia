@@ -24,7 +24,7 @@ function checkLogin() {
         toggleVisibility('nav-logout', true);
     } else if (academy) {
         toggleVisibility('nav-start', false);
-        toggleVisibility('nav-search', true);
+        toggleVisibility('nav-search', false);
         toggleVisibility('nav-favorites', false);
         toggleVisibility('nav-dashboard-user', false);
         toggleVisibility('nav-dashboard-academy', true);

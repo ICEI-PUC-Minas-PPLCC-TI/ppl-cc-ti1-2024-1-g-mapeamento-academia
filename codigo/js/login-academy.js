@@ -9,6 +9,7 @@ document.getElementById('loginAcademyForm').addEventListener('submit', async (ev
     if (academies.length > 0) {
         alert('Login realizado com sucesso!');
         loginAcademy(academies[0]); // Chamar função de login de academia
+        localStorage.setItem('academyId', academies[0].id);
         window.location.href = `academy-dashboard.html?id=${academies[0].id}`;
     } else {
         alert('Nome ou senha incorretos.');

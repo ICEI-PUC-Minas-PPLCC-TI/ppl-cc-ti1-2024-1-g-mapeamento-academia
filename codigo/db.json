@@ -21,11 +21,11 @@
       "password": "123"
     },
     {
-      "id": "4445",
       "name": "teste123",
       "cpf": "321231123",
       "email": "teste@email.com",
-      "password": "123"
+      "password": "123",
+      "id": "4445"
     }
   ],
   "academies": [
@@ -35,6 +35,7 @@
       "name": "SmartFit",
       "location": "Salvador - BA",
       "address": "Rua Waldemar Falcão, 323, Salvador",
+      "price": "90",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
       "password": "sf"
     },
@@ -44,6 +45,7 @@
       "name": "BlueFit",
       "location": "João Pessoa - PB",
       "address": "Avenida Presidente Epitacio Pessoa, 1400, João Pessoa",
+      "price": "75",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP5OjvZ4jbCRkskh4bm3d6zzDLUOKyHiyvGA&s",
       "password": "bf"
     },
@@ -53,17 +55,18 @@
       "name": "SmartFit",
       "location": "Belo Horizonte - MG",
       "address": "Rua Fernandes Tourinho, 195, Savassi, Belo Horizonte",
+      "price": "110",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
       "password": "123"
     },
     {
-      "login": "smartfit1",
       "id": "1001",
+      "login": "smartfit1",
       "name": "SmartFit",
       "location": "São Paulo - SP",
       "address": "Avenida Jabaquara, 1381 - Mirandópolis",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
-      "password": "123"
+      "price": "89",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s"
     },
     {
       "login": "smartfit2",
@@ -71,6 +74,7 @@
       "name": "SmartFit",
       "location": "São Paulo - SP",
       "address": "Alameda Santos, 1347 - Cerqueira César",
+      "price": "85",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
       "password": "123"
     },
@@ -80,6 +84,7 @@
       "name": "SmartFit",
       "location": "Brasília - DF",
       "address": "Quadra CL 115 - Santa Maria",
+      "price": "75",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
       "password": "123"
     },
@@ -89,6 +94,7 @@
       "name": "SmartFit",
       "location": "São Paulo - SP",
       "address": "Avenida Morumbi, 6340 - Morumbi",
+      "price": "90",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
       "password": "123"
     },
@@ -98,6 +104,7 @@
       "name": "SmartFit",
       "location": "Rio de Janeiro - RJ",
       "address": "Avenida das Américas, 500 - Barra da Tijuca",
+      "price": "70",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
       "password": "123"
     },
@@ -107,6 +114,7 @@
       "name": "SmartFit",
       "location": "Belo Horizonte - MG",
       "address": "Avenida do Contorno, 6061 - Savassi",
+      "price": "115",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
       "password": "123"
     },
@@ -116,6 +124,7 @@
       "name": "SmartFit",
       "location": "Porto Alegre - RS",
       "address": "Avenida Assis Brasil, 4320 - Sarandi",
+      "price": "85",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
       "password": "123"
     },
@@ -125,6 +134,7 @@
       "name": "SmartFit",
       "location": "Curitiba - PR",
       "address": "Rua Brigadeiro Franco, 2300 - Água Verde",
+      "price": "75",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
       "password": "123"
     },
@@ -134,6 +144,7 @@
       "name": "SmartFit",
       "location": "Recife - PE",
       "address": "Rua Padre Carapuceiro, 777 - Boa Viagem",
+      "price": "80",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
       "password": "123"
     },
@@ -143,6 +154,7 @@
       "name": "SmartFit",
       "location": "Salvador - BA",
       "address": "Avenida Antônio Carlos Magalhães, 1034 - Itaigara",
+      "price": "70",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
       "password": "123"
     },
@@ -152,6 +164,7 @@
       "name": "SmartFit",
       "location": "Fortaleza - CE",
       "address": "Avenida Washington Soares, 85 - Edson Queiroz",
+      "price": "100",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
       "password": "123"
     },
@@ -161,6 +174,7 @@
       "name": "SmartFit",
       "location": "Manaus - AM",
       "address": "Avenida Djalma Batista, 482 - Chapada",
+      "price": "75",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
       "password": "123"
     },
@@ -170,6 +184,7 @@
       "name": "SmartFit",
       "location": "Belém - PA",
       "address": "Travessa Padre Eutíquio, 1078 - Batista Campos",
+      "price": "90",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
       "password": "123"
     },
@@ -179,6 +194,7 @@
       "name": "SmartFit",
       "location": "Goiânia - GO",
       "address": "Avenida T-10, 1300 - Setor Bueno",
+      "price": "95",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
       "password": "123"
     },
@@ -188,6 +204,7 @@
       "name": "SmartFit",
       "location": "Vitória - ES",
       "address": "Avenida Américo Buaiz, 200 - Enseada do Suá",
+      "price": "95",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
       "password": "123"
     },
@@ -197,6 +214,7 @@
       "name": "SmartFit",
       "location": "Campo Grande - MS",
       "address": "Avenida Afonso Pena, 4909 - Santa Fé",
+      "price": "110",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
       "password": "123"
     },
@@ -206,6 +224,7 @@
       "name": "SmartFit",
       "location": "Cuiabá - MT",
       "address": "Avenida Historiador Rubens de Mendonça, 3300 - Baú",
+      "price": "100",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
       "password": "123"
     },
@@ -215,6 +234,7 @@
       "name": "SmartFit",
       "location": "João Pessoa - PB",
       "address": "Avenida Presidente Epitácio Pessoa, 1251 - Estados",
+      "price": "95",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
       "password": "123"
     },
@@ -224,6 +244,7 @@
       "name": "SmartFit",
       "location": "Natal - RN",
       "address": "Avenida Senador Salgado Filho, 2234 - Lagoa Nova",
+      "price": "90",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
       "password": "123"
     },
@@ -233,6 +254,7 @@
       "name": "SmartFit",
       "location": "Aracaju - SE",
       "address": "Avenida Ministro Geraldo Barreto Sobral, 215 - Jardins",
+      "price": "75",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
       "password": "123"
     }
@@ -282,8 +304,8 @@
       "id": "cb65",
       "userId": "4445",
       "academyId": "4955",
-      "rating": 5,
-      "comment": "horrivel. mas é barata"
+      "rating": 3,
+      "comment": "não compensa"
     },
     {
       "id": "68ff",

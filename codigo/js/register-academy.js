@@ -4,6 +4,7 @@ document.getElementById('registerAcademyForm').addEventListener('submit', async 
     const name = document.getElementById('name').value;
     const location = document.getElementById('location').value;
     const address = document.getElementById('address').value;
+    const price = document.getElementById('price').value;
     const image = document.getElementById('image').value;
     const password = document.getElementById('password').value;
 
@@ -13,7 +14,7 @@ document.getElementById('registerAcademyForm').addEventListener('submit', async 
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ login, name, location, address, image, password })
+            body: JSON.stringify({ login, name, location, address, price, image, password })
         });
 
         if (response.ok) {

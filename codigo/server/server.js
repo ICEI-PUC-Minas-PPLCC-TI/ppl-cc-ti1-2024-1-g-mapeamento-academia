@@ -30,7 +30,7 @@ server.post('/academies', (req, res) => {
         res.status(400).send({ message: 'Academia já existe.' });
     } else {
         const id = Date.now().toString(); // Generate a simple unique ID
-        db.get('academies').push({ login, id, name, location, address, image, password }).write();
+        db.get('academies').push({ login, id, name, location, address, price, image, password }).write();
         res.status(201).send({ message: 'Academia cadastrada com sucesso.' });
     }
 });
