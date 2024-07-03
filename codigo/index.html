@@ -46,9 +46,11 @@
                                 <i class="fa-solid fa-right-to-bracket"></i> Entrar
                             </a>
                         </li>
-                        <li class="nav-item mx-4 cor_primaria rounded-3 d-flex justify-content-center align-items-center" onmouseover="this.style.backgroundColor='rgb(139, 0, 0)'"
+                        <li class="nav-item mx-4 cor_primaria rounded-3 d-flex justify-content-center align-items-center"
+                            onmouseover="this.style.backgroundColor='rgb(139, 0, 0)'"
                             onmouseout="this.style.backgroundColor=''">
-                            <a class="nav-link fs-5 fw-bold px-5 text-light text-center" href="pages/choose-register.html">
+                            <a class="nav-link fs-5 fw-bold px-5 text-light text-center"
+                                href="pages/choose-register.html">
                                 <i class="fa-solid fa-user-plus"></i> Cadastrar
                             </a>
                         </li>
@@ -235,14 +237,15 @@
                         <form id="formSuporte" class="text-black fw-bold">
                             <div class="row g-2 flex-nowrap">
                                 <div class="col">
-                                    <input type="email" id="inputEmail" class="form-control" placeholder="Digite seu email" required>
+                                    <input type="email" id="inputEmail" class="form-control"
+                                        placeholder="Digite seu email" required>
                                 </div>
                             </div>
                             <button type="submit" class="btn-sm btn-primary" role="button">Entrar em contato</button>
                         </form>
                     </div>
                 </div>
-            </div>            
+            </div>
         </div>
     </section>
     <footer class="bg-light text-center text-lg-start">
@@ -253,10 +256,11 @@
 </body>
 <script src="./js/session.js"></script>
 <script>
-    document.getElementById('formSuporte').onsubmit = function(event) {
+    document.getElementById('formSuporte').onsubmit = function (event) {
         event.preventDefault(); // Impede o envio real do formulário
         var email = document.getElementById('inputEmail').value;
         console.log(email); // Exibe o email no console
     };
 </script>
+
 </html>
