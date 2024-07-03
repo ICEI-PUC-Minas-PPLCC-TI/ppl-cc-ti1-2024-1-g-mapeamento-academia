@@ -1,12 +1,6 @@
 {
   "users": [
     {
-      "name": "lixo2",
-      "cpf": "3245345",
-      "email": "l@gmail.com",
-      "id": "09ed"
-    },
-    {
       "id": "f52d",
       "name": "alice",
       "cpf": "456234456",
