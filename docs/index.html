@@ -17,6 +17,8 @@
   <link rel="stylesheet" type="text/css" href="assets/vendor/highlight.js/styles/github.css">
   <!-- Custom Stylesheet -->
   <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body data-spy="scroll" data-target=".idocs-navigation" data-offset="125">
@@ -315,7 +317,7 @@
                     <iframe title="Protótipo interativo" src="https://marvelapp.com/prototype/4hd6091?emb=1&iosapp=false&frameless=false" width="600px" height="360px" allowtransparency="true" frameborder="0"></iframe>
                   </p>
                 </div>
-                <p>......  COLOQUE AQUI O DIAGRAMA DE USER FLOW E O LINK PARA O PROTÓTIPO INTERATIVO ......</p>
+                <p><img src="../codigo/img/Captura de tela 2024-07-03 141206.png" alt="" width="1000"></p>
               </section>
 
               <section>
@@ -365,12 +367,12 @@
                     <tr>
                         <td>Processo de Design Thinking</td>
                         <td>Miro</td>
-                        <td><a href="https://miro.com/XXXXXXX">https://miro.com/XXXXXXX</a><span class="exemplo">EXEMPLO</span></td>
+                        <td><a href="https://miro.com/app/board/uXjVKdJngSA=/">https://miro.com/app/board/uXjVKdJngSA=/</a></td>
                     </tr>
                     <tr>
                         <td>Repositório de código</td>
                         <td>GitHub</td>
-                        <td><a href="https://github.com/XXXXXXX">https://github.com/XXXXXXX</a><span class="exemplo">EXEMPLO</span></td>
+                        <td><a href="https://github.com/ICEI-PUC-Minas-PPLCC-TI/ti-1-ppl-cc-m-20241-2-g3-mapeamento-academia">https://github.com/ICEI-PUC-Minas-PPLCC-TI/ti-1-ppl-cc-m-20241-2-g3-mapeamento-academia</a></td>
                     </tr>
                     <tr>
                         <td>Hospedagem do site</td>
@@ -380,7 +382,7 @@
                     <tr>
                         <td>Protótipo Interativo</td>
                         <td>MavelApp ou Figma</td>
-                        <td><a href="https://figma.com/XXXXXXX">https://figma.com/XXXXXXX</a><span class="exemplo">EXEMPLO</span></td>
+                        <td><a href="https://www.figma.com/design/ZusyCkHhBF5FDdPr5wbqld/Untitled?node-id=0-1">https://www.figma.com/design/ZusyCkHhBF5FDdPr5wbqld/Untitled?node-id=0-1</a></td>
                     </tr>
                 </tbody>
               </table>
@@ -395,7 +397,7 @@
                 <p>Apresente a divisão de papéis e tarefas entre os membros do grupo. Informe quem é o Scrum Master, o Product Owner e os desenvolvedores. Informe também quem é o responsável pela documentação do projeto.</p>
                 <p>Apresente o quadro de gerenciamento do time (Kanban), seu formato e as experiências na utilização dessa ferramenta (GitHub Projects) </p>
               </div>
-              <p>......  COLOQUE AQUI O SEU TEXTO ......</p>
+              <p>Bernardo Alves - Product Owner <br> Matheus Silva - Scrum Master <br> Gabriel Tostes - Responsável pela documentação <br> Lucas Marinho - Desenvolvedor <br> Leonardo Kauê - Desenvolvedor <br> Erik Lima - Desenvolvedor</p>
             </section>
 
 
@@ -434,7 +436,7 @@
                 <p>O video de apresentação é voltado para que o público externo possa conhecer a solução. O formato é livre, sendo importante que seja apresentado o problema e a solução numa linguagem descomplicada e direta.</p>
                 <p>Utilize o recurso de compartilhamento via embed e inclua o vídeo logo abaixo.</p>
               </div>
-              <p>......  COLOQUE AQUI O SEU VIDEO ......</p>
+              <p><iframe width="560" height="315" src="https://www.youtube.com/embed/9Zg048TlPtk?si=Ukt4TZ37bb-X9Wej" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
             </section>
 
             <section id="ti_funcionalidades">
@@ -474,32 +476,57 @@
               </div>
 
               <section>
-                <h5>Estrutura de Dados - Contatos<span class="exemplo">EXEMPLO</span></h5>
-                <p>Contatos da aplicação</p>
+                <h5>Estrutura de Dados - Usuário</h5>
+                <p>Registro dos usuários do sistema utilizados para login e para o perfil do sistema</p>
                 <pre>
                   {
-                    "id": 1,
-                    "nome": "Leanne Graham",
-                    "cidade": "Belo Horizonte",
-                    "categoria": "amigos",
-                    "email": "Sincere@april.biz",
-                    "telefone": "1-770-736-8031",
-                    "website": "hildegard.org"
+                    "id": "f52d",
+                    "name": "alice",
+                    "cpf": "456234456",
+                    "email": "a@gmail.com",
+                    "password": "123"
                   }
                 </pre>
               </section>
 
               <section>
-                <h5>Estrutura de Dados - Usuários<span class="exemplo">EXEMPLO</span></h5>
-                <p>Registro dos usuários do sistema utilizados para login e para o perfil do sistema</p>
+                <h5>Estrutura de Dados - Academias</h5>
+                <p>Registro das academias do sistema utilizados para login e para o perfil do sistema</p>
                 <pre>
                   {
-                    id: "eed55b91-45be-4f2c-81bc-7686135503f9"
-                    email: "admin@abc.com"
-                    id: "eed55b91-45be-4f2c-81bc-7686135503f9"
-                    login: "admin"
-                    nome: "Administrador do Sistema"
-                    senha: "123"
+                    "login": "smartfit00",
+                    "id": "b080",
+                    "name": "SmartFit",
+                    "location": "Salvador - BA",
+                    "address": "Rua Waldemar Falcão, 323, Salvador",
+                    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHtlsyCG7UZpPYtarMtV-rY2QDoNz_m0jtg&s",
+                    "password": "sf"
+                  }
+                </pre>
+              </section>
+
+              <section>
+                <h5>Estrutura de Dados - Favoritos</h5>
+                <p>Registro dos favoritos</p>
+                <pre>
+                  {
+                    "id": "5a66",
+                    "userId": "4445",
+                    "academyId": "4955"
+                  }
+                </pre>
+              </section>
+
+              <section>
+                <h5>Estrutura de Dados - Reviews</h5>
+                <p>Registro das reviews dadas pelos usuários</p>
+                <pre>
+                  {
+                    "id": "607b",
+                    "userId": 1,
+                    "academyId": "b080",
+                    "rating": 5,
+                    "comment": "boa"
                   }
                 </pre>
               </section>
@@ -608,7 +635,34 @@
             <div class="alert alert-warning collapse" role="alert" id="collapseReferencias">
               <p>Apresente as referências bibliográficas utilizadas no projeto. Inclua itens como: (1) livros, artigos, tutoriais, etc. utilizados no desenvolvimento da solução; (2) links para sites, blogs, etc. utilizados no desenvolvimento da solução.</p>
             </div>
-            <p>......  COLOQUE AQUI O SEU TEXTO ......</p>
+            <p>
+              <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <iframe width="1150" height="650" src="https://www.youtube.com/embed/HGTJBPNC-Gw?si=aTBhRaEAgNAEr3P6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>
+                  <div class="carousel-item">
+                    <iframe width="1150" height="650" src="https://www.youtube.com/embed/_1kNqAybxW0?si=RIgRhMyXFRNnHJEB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>
+                  <div class="carousel-item">
+                    <iframe width="1150" height="650" src="https://www.youtube.com/embed/QhQ4m5g2fhA?si=MeRsUWbpqm_H8Lkg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </p>
           </section>
 
         </div>
@@ -645,6 +699,8 @@
   <script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
   <!-- Custom Script -->
   <script src="assets/js/theme.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>
